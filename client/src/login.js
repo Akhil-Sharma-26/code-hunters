@@ -18,7 +18,7 @@ const Login=()=>{
 			</div> 
             <div className="form-group">
                 <label htmlFor="passw">Roll Number</label>
-			        <input type="Number" name="passw" id="passw" required/> 
+			        <input type="Number" name="rollno" id="rollno" required/> 
             </div>
             <div className="form-group"> 
 				<label htmlFor="passw">Password</label>
