@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import "./Styles/App.scss";
 import "./Styles/Header.scss";
 import Home from "./Components/Home.jsx";
+import "./Styles/Home.scss";
 
 const App = () => {
   return (
