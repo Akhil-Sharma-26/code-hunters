@@ -1,6 +1,7 @@
 import React from 'react'
-// import "../Styles/Societies.scss"
-import "../Styles/Societies.css"
+import { Link } from 'react-router-dom';
+import "../Styles/Societies.scss"
+// import "../Styles/Societies.css"
 import Header from "./Header"
 const Societies = () => {
     return (
@@ -10,7 +11,7 @@ const Societies = () => {
           <div className="cards">
               <div className="c1">
                   <div className="pic">
-                    <img src="../Assets/ccs_logo.png" alt="ccs" />
+                    <img src="../Assets/ccs_logo" alt="ccs"  />
                   </div>
                   {/* <hr/> */}
                   <h3>Creative Coding Society</h3>
@@ -27,8 +28,14 @@ const Societies = () => {
                   </div>
                   <h3>Thapar Amatuare Astronomical Society</h3>
               </div>
+              
+              
           </div>
+            <div className="show-more">
+            <Link to="/more" className="show-more-link">Show more</Link>
+            </div>
       </div>
+      
       </>
     )
   }

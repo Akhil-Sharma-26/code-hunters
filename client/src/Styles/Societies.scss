@@ -15,29 +15,47 @@
         display: flex ;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap; 
+        gap: 20px;
+        padding: 0 20px; /* Added padding for the left and right margins */
+        box-sizing: border-box; /* Ensures padding is included in the width calculation */
+        margin: 0 auto; /* Center align the cards */
+        max-width: 1200px;
 
 
         > .c1 {
+            width: calc(25% - 40px);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             padding: 20px;
             width: 20vw;
-            // background-color: aqua;
+            background-color: lightskyblue;
             margin: 20px ;
             height: 40vh;
             border-radius: 10px;
             box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 1.0);
 
-            > .pic {
-                width: 100%;
-                height: 100%;
-                object-fit: scale-down;
-                
-                border-radius: 10px;
-            }
+            
+            > .pic1,
+        > .pic2,
+      > .pic3 {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
+      > .pic1 > img,
+      > .pic2 > img,
+      > .pic3 > img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        border-radius: 10px;
+      }
             > h3{
                 text-align: center;
             }
@@ -58,3 +76,21 @@
     }
 
 }
+.show-more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .show-more-link {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #000000;
+    transition: border-bottom-color 0.2s ease-in-out;
+    font-size: larger;
+  
+    &:hover {
+      border-bottom-color: #007bff;
+    }
+  }
