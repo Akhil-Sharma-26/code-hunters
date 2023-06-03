@@ -1,0 +1,53 @@
+
+.societies{
+    // margin-top: 200px ;
+    background-image: url('../Assets/yt3sknzm.png');
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    > .cards {
+        width: 100%;
+        display: flex ;
+        align-items: center;
+        justify-content: center;
+
+
+        > .c1 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            width: 20vw;
+            background-color: aqua;
+            margin: 20px ;
+            height: 40vh;
+            border-radius: 10px;
+            box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 1.0);
+
+            // > pic {
+            //     width: 100%;
+            //     border-bottom: 2p solid bla;
+            // }
+
+        }
+
+        > .c1:hover{
+
+            animation: imgUp 0.4s linear 2 alternate;
+
+            @keyframes imgUp {
+                to {
+                    transform: translateY(  -10px );
+                }
+            }
+        }
+
+    }
+
+}
