@@ -5,12 +5,12 @@ import Header from "./Components/Header";
 import "./Styles/App.scss";
 import "./Styles/Header.scss";
 import Home from "./Components/Home.jsx";
+import Societies from "./Components/Societies";
 import "./Styles/Home.scss";
 import Footer from "./Components/Footer";
 import "./Styles/Footer.scss";
 import Event from "./Components/Event";
 import "./Styles/Event.scss";
-
 const App = () => {
   return (
     // <div>
@@ -20,6 +20,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/societies" element={<Societies/>}/>
         <Route path="/events" element={<Event />} />
       </Routes>
       <Footer />

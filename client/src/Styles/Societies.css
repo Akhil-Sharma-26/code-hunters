@@ -1,0 +1,66 @@
+.societies {
+    /* margin-top: 200px; */
+    background-image: url('../Assets/yt3sknzm.png');
+    width: 100%;
+    height: 100vh;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .societies > .cards {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .societies > .cards > .c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 20vw;
+    background-color: aqua;
+    margin: 20px;
+    height: 40vh;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 1.0);
+  }
+  
+  .societies > .cards > .c1 > .pic1,
+.societies > .cards > .c1 > .pic2,
+.societies > .cards > .c1 > .pic3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.societies > .cards > .c1 > .pic1 > img,
+.societies > .cards > .c1 > .pic2 > img,
+.societies > .cards > .c1 > .pic3 > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+  
+  .societies > .cards > .c1 > h3 {
+    text-align: center;
+  }
+  
+  .societies > .cards > .c1:hover {
+    animation: imgUp 0.4s linear 2 alternate;
+  }
+  
+  @keyframes imgUp {
+    to {
+      transform: translateY(-10px);
+    }
+  }
