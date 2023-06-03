@@ -5,7 +5,7 @@ import Header from "./Components/Header";
 import "./Styles/App.scss";
 import "./Styles/Header.scss";
 import Home from "./Components/Home.jsx";
-
+import Societies from "./Components/Societies"
 const App = () => {
   return (
     // <div>
@@ -15,6 +15,7 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/societies" element={<Societies/>}/>
       </Routes>
     </Router>
   );
