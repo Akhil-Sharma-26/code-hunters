@@ -4,8 +4,10 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
     font-size: large;
+    background-color: white;
+    z-index: 2;
+    position: fixed;
 
 
     > h1 {

@@ -1,6 +1,7 @@
 import React from 'react'
 import vg from "../Assets/2.webp"
 
+
 const Home = () => {
   return (
     <>
@@ -17,7 +18,20 @@ const Home = () => {
       </div>
     </div>
     <div className="home3">
-      <div></div>
+      <div>
+        <h1>Who we are ?</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab non iusto debitis! Dignissimos, nulla aliquam in blanditiis impedit harum a ratione ducimus ipsum tempore suscipit error voluptatum non, repudiandae expedita. Deserunt dolorem asperiores explicabo nulla, necessitatibus qui ex tempora corrupti eos expedita harum beatae blanditiis accusamus fuga cum adipisci, natus numquam? Quae, fuga cupiditate? Incidunt dolores voluptates optio dicta laborum vel placeat temporibus, a delectus officia doloremque dignissimos deserunt, harum quisquam laudantium, ut nam laboriosam commodi repellat tempore ipsam odio. Quam similique, ullam ratione ipsa a error cupiditate? Possimus totam neque, a ipsam laudantium eligendi quae molestiae iure deleniti accusantium?
+        </p>
+      </div>
+    </div>
+    <div className="home4">
+      <h1>
+        Contributors
+      </h1>
+      <article>
+          <img src="../Assets/me.jpg" alt="" />
+      </article>
     </div>
     </>
   )
