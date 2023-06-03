@@ -1,0 +1,36 @@
+footer{
+    background-color:  white;
+    height: 150px;
+    width: 100%;
+    padding : 10px ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // margin : -100px;
+    border-radius: 50px 0 0 50px ;
+
+    > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 11px;
+
+        > div {
+            padding: 10px;
+            
+            > a {
+                padding : 4px ;
+            }
+
+        }
+
+    }    
+
+    > a{
+        color : red;
+    }
+
+}
