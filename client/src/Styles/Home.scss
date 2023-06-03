@@ -18,34 +18,39 @@
         justify-content: center;
         padding: 20px;
         // z-index: ;
+        // filter: blur(4px);
 
         > h1 { 
             font-size: 60px;
             font-family: 'Raleway', sans-serif;
-            color: white;
+            color: black;
             z-index: 1;
+            backdrop-filter: blur(2px);
         }
 
         > p {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 27px;
-            color: white;
+            color: black;
             z-index: 1;
+            text-align: right;
+            // backdrop-filter: blur(3px);
+            // margin-bottom: 70vh;
         }
 
     }
 
     &::before{ 
         content: "";
-        width: 100%;
+        width: 90%;
         height: 100%;
         position: absolute;
-        background: no-repeat center/auto url("../Assets/1.png") ;
+        background: no-repeat left url("../Assets/graduation-cap.png") ;
         z-index: 0 ;
         // background-image: url("../Assets/1.png");
         // background-repeat: no-repeat;
         // background-position: center;
-        // filter: blur( 3px );
+        filter: blur( 3px );
         border-radius: 0 0 200px 200px  ;
     }
     
@@ -55,12 +60,42 @@
 .home2 {
     width: 100%;
     height : 100vh ;
-    background-color: #090c31;
+    background-color: white;
     padding: 500px 0 ;
+    display: flex;
+    align-items:center;
+    justify-content:right;
+    margin-top: -200px ;
+    // background-image: url("../Assets/3.jpeg");
+    // filter: blur(2px);
+    // background-size: cover;
+    z-index: -1;
+
+   > .sidenote{
+    color: red;
+    padding: 111px;
+    font-size: 100px;
+    margin-bottom: 190px ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    color: black;
+           
+   }
+
+   > .box {
+
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 70vw;
+    background-color: #FFE7AF;
+    box-shadow:  0px 0px 40px rgba($color: #000000, $alpha: 0.5);
     margin-top: -200px ;
+    height: 70vh;
+    border-radius: 100px 0 0 100px  ;
+    z-index: 1;
+    // border-style: none;
+
 
     > img {
         width: 30%;
@@ -73,13 +108,17 @@
         flex-direction: column;
         justify-content: center;
         padding: 20px ;
+        // background-image: url("../Assets/3.jpeg");
+        // background-size: cover;
+        // backdrop-filter: blur(2px);
 
         > p {
-            color : white ;
+            color : black;
             letter-spacing: 2px ;
             word-spacing: 5px ;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
+   }
     }
 }
 
