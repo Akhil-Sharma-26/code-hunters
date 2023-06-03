@@ -1,8 +1,8 @@
 import React,{useState} from 'react' 
 import './login.css'
 const Login=()=>{ 
-	const [email,setEmail]=useState(""); 
-	const [passw,setPassw]=useState(""); 
+	const [email, setEmail]=useState(""); 
+	const [passw, setPassw]=useState(""); 
 	const[dataInput, setDataInput]=useState(""); 
 	const submitThis=()=>{
 		const info={email:email,passw:passw}; 
