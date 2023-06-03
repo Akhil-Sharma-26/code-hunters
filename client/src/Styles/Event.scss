@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+
 .event{
     // margin-top: 200px ;
     width: 100%;
@@ -7,12 +13,24 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('../Assets/BGMI.jpeg');
+    background-size: cover;
+    // filter: blur(5px);
+    // z-index: -1;
+
+    > h1 {
+        font-size: 50px;
+        margin: 20px ;
+        font-family: 'Merriweather', serif;
+    }
 
     > .cards {
         width: 100%;
         display: flex ;
         align-items: center;
         justify-content: center;
+        // z-index: 1;
+        // backdrop-filter: blur(5px);
 
 
         > .c1 {
@@ -22,17 +40,59 @@
             justify-content: center;
             padding: 20px;
             width: 20vw;
-            background-color: aqua;
+            // background-color: #58C4C3;
             margin: 20px ;
             height: 40vh;
             border-radius: 10px;
             box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 1.0);
 
-            // > pic {
-            //     width: 100%;
-            //     border-bottom: 2p solid bla;
-            // }
+            > .pic1 {
+                background-image: url("../Assets/ic.jpg");
+                width: 19vw;
+                height: 25vh;
+                background-size: cover;
+                border-radius: 10px;
+                // padding: 10px;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
 
+            > .pic2 {
+                background-image: url("../Assets/GSoC.jpg");
+                width: 19vw;
+                height: 25vh;
+                background-size: contain;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                background-blend-mode:multiply;
+                // padding: 10px;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+
+            > .pic3 {
+                background-image: url("../Assets/codeninja.jpg");
+                width: 19vw;
+                height: 25vh;
+                background-size:contain;
+                background-repeat: no-repeat;
+                border-radius: 10px;
+                // padding: 10px;
+                margin-top: 0px;
+                margin-bottom: 10px;
+            }
+        }
+
+        > #cd1{
+            background-color: #5ED0D4;
+        }
+
+        > #cd2 {
+            background-color : #F7DE4A;
+        }
+
+        > #cd3 {
+            background-color: #EC4D83;
         }
 
         > .c1:hover{
