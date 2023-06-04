@@ -9,14 +9,16 @@ const Header = () => {
         <main>
           <HashLink to = {"/#home"}>Home</HashLink>  
           <HashLink to = {"/#notes"}>Notes</HashLink>
-          <Link to = {"/financial_assistance"}>Financial Assitance</Link>
-          <Link to = {"/societies"}>Societies</Link>
-          <Link to = {"/events"}>Events</Link>
+          <HashLink to = {"/#finance"}>Financial Assitance</HashLink>
+          <HashLink to = {"/#societies"}>Societies</HashLink>
+          <HashLink to = {"/#events"}>Events</HashLink>
           <HashLink to = {"/#aboutus"}>About us</HashLink>
           {/* HashLink sirf wo hi pages karne hain jo scroll kar ke access kiye ja sakte hain and jinke liye alag se page bnana hai unke liye sirf link */}
         </main>
     </nav>
   )
 }
+
+// to create all the paths and all the Create new lining tags you must ensure about the routing in the app.js unless there is no benefit of doing anything by just putting the LINK tag and then giving a link the link tag will only work if the new component's address is in one of the ROUTES 
 
 export default Header
