@@ -6,16 +6,18 @@
 
 .event{
     // margin-top: 200px ;
+    padding-top:100px ;
     width: 100%;
-    height: 100vh;
-    background-color: antiquewhite;
+    // height: 100vh;
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../Assets/BGMI.jpeg');
+    // background-image: url('../Assets/BGMI.jpeg');
     background-size: cover;
     // filter: blur(5px);
+    // overflow-x:
 
     > h1 {
         font-size: 50px;
@@ -30,7 +32,10 @@
         justify-content: center;
         // z-index: 1;
         // backdrop-filter: blur(5px);
-
+        padding: 20px ;
+        margin: 20px ;;
+        max-width: 95vw;
+        flex-wrap: wrap;
 
         > .c1 {
             display: flex;
@@ -43,7 +48,8 @@
             margin: 20px ;
             height: 40vh;
             border-radius: 10px;
-            box-shadow: 0px 5px 10px rgba($color: #000000, $alpha: 1.0);
+            box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.3);
+            transition: box-shadow 0.3s ease;
 
             > .pic1 {
                 background-image: url("../Assets/ic.jpg");
@@ -96,7 +102,8 @@
 
         > .c1:hover{
 
-            animation: imgUp 0.4s linear 2 alternate;
+            // animation: imgUp 0.4s linear 2 alternate;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
 
             @keyframes imgUp {
                 to {
