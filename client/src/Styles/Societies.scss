@@ -1,15 +1,19 @@
 
 .societies{
     // margin-top: 200px ;
-    background-image: url('../Assets/yt3sknzm.png');
+    // background-image: url('../Assets/yt3sknzm.png') ; done
+    background-size: fill;
+  background-position: center;
+  // filter: blur(2px); !This blur command is not working properly.. @Anush Kindly check it
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
+    
     > .cards {
         width: 100%;
         display: flex ;
@@ -74,8 +78,22 @@
         }
 
     }
+    >.list {
+      margin-top: 20px;
+      
+      ul {
+        list-style: none;
+        padding: 0;
+        
+        li {
+          padding: 10px;
+          background-color: lightskyblue;
+          margin-bottom: 10px;
+          border-radius: 5px;
+        }
+      } }
+  }
 
-}
 .show-more {
     display: flex;
     justify-content: center;
@@ -91,6 +109,8 @@
     font-size: larger;
   
     &:hover {
-      border-bottom-color: #007bff;
+      border-color: #fbeacd;
+      background-color: white;
+
     }
   }
