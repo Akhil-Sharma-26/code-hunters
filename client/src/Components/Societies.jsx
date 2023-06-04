@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import "../Styles/Societies.scss"
-// import "../Styles/Societies.css"
 import Header from "./Header"
 const Societies = () => {
     return (
