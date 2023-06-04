@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
 import "../Styles/Societies.scss";
 import Header from "./Header";
-
 const Societies = () => {
   const [showMore, setShowMore] = useState(false);
 

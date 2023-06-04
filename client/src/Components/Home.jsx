@@ -2,6 +2,7 @@ import React from 'react'
 import vg from "../Assets/2.webp"
 import Firstyear from './First_year'
 // import vg from "../Assets/book-stack.png"
+import { Link } from "react-router-dom"
 
 
 const Home = () => {
@@ -18,10 +19,6 @@ const Home = () => {
               Notes
         </div>
         <div className='box'>
-            {/* <img src={vg} alt="Vector" />
-            <div>
-          <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, accusamus asperiores perferendis facilis, distinctio hic animi natus error tempora, officiis facere quod sapiente a odio magnam minima dolorem pariatur amet excepturi voluptates quo modi expedita incidunt? Quos tenetur veniam nostrum eum numquam rerum! Inventore quis, id iure modi quasi quam, dolorem, animi iste itaque enim perspiciatis et? Nesciunt est optio aspernatur similique accusantium repudiandae beatae vero iure magnam fugiat dicta enim laborum quisquam numquam, molestiae dolor quo, autem quia unde! Perspiciatis laudantium architecto vitae impedit provident sit exercitationem magni natus doloremque, iusto libero numquam recusandae odio deserunt dolorem suscipit sed!</p>
-            </div> */}
             <div className="note1">
                   <div className="pic1"></div>
                   <h5><a>First year</a></h5>
@@ -35,42 +32,71 @@ const Home = () => {
                   <h5>Third year</h5></div>
             </div>
       </div>
-    {/* <div className="home3" id="about">
-      <div>
-        <h1>Who we are ?</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab non iusto debitis! Dignissimos, nulla aliquam in blanditiis impedit harum a ratione ducimus ipsum tempore suscipit error voluptatum non, repudiandae expedita. Deserunt dolorem asperiores explicabo nulla, necessitatibus qui ex tempora corrupti eos expedita harum beatae blanditiis accusamus fuga cum adipisci, natus numquam? Quae, fuga cupiditate? Incidunt dolores voluptates optio dicta laborum vel placeat temporibus, a delectus officia doloremque dignissimos deserunt, harum quisquam laudantium, ut nam laboriosam commodi repellat tempore ipsam odio. Quam similique, ullam ratione ipsa a error cupiditate? Possimus totam neque, a ipsam laudantium eligendi quae molestiae iure deleniti accusantium?
-        </p>
-      </div>
-    </div> */}
-    <div className="home3" id="about">
+    <div className="home3" id="finance">
         <div className='box'>
             <div className="note1">
                   <div className="pic1"></div>
-                  <h5>First year</h5>
+                  <h5>Bank & Loans</h5>
             </div>
             <div className="note2">
                   <div className="pic2"></div>
-                  <h5>Second Year</h5></div>
+                  <h5>Scholarships</h5></div>
+        </div>
+        <div className='sidenote'>
+        <Link to={"*"}>Financial<br/>Assistance</Link>
+        </div>
+      </div>
+      <div className="home4" id="societies">
+        <div className='sidenote' title='Click here to view more'>
+              <Link to={"/societies"}>Societies</Link>
+              
+        </div>
+        <div className='box'>
+            <div className="note1">
+                  <div className="pic1"></div>
+                  <h5>
+                        <a href="https://ccstiet.com" target='blank'>CCS<br/>Creative Computing Society</a>
+                  </h5>
+            </div>
+            <div className="note2">
+                  <div className="pic2"></div>
+                  <h5>
+                        <a href="https://sites.google.com/thapar.edu/taas/home">TAAS</a>
+                  </h5>
+            </div>
             {/* <div className="note3">
                   <div className="pic3">
                   </div>
                   <h5>Third year</h5></div> */}
+            </div>
+      </div>
+      <div className="home5" id="events">
+        <div className='box'>
+            <div className="note1">
+                  <div className="pic1"></div>
+                  <h5>Microsoft Imagine Cup</h5>
+            </div>
+            <div className="note2">
+                  <div className="pic2"></div>
+                  <h5>Google Summer of Code</h5>
+            </div>
+            <div className="note3">
+                  <div className="pic3"></div>
+                  <h5>Coding Ninjas</h5>
+            </div>
         </div>
         <div className='sidenote'>
-              Financial <br/> Assistance
+               Events
         </div>
       </div>
-    <div className="home4" id="aboutus">
-      <div>
-      <h1>
-        Contributors
-      </h1>
-      <article>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique non beatae laboriosam dolorem iste, exercitationem nostrum a ad tempora tenetur, deleniti alias fugiat, aut quibusdam velit! Nihil, dolorum quidem, totam exercitationem itaque voluptatum animi cumque sit, ab vel laboriosam molestias arc
-      </article>
+      <div className="home6" id="aboutus">
+        <div className='sidenote' title='Click here to view more'>
+              <Link to={"/societies"}>About Us</Link>
+        </div>
+        <div className='box'>
+            <p>Welcome to our educational website! We are a dedicated platform committed to supporting students on their educational journey. We offer a wide range of resources, including valuable notes generously shared by seniors, to help you succeed academically.We understand that financial challenges can often hinder educational pursuits. That's why we provide comprehensive financial guidance, empowering you to navigate the complex world of scholarships, grants, and other financial aid options.In addition to academic support and financial guidance, we believe in the power of community and collaboration, that's why we provide you with the news of all the events that are going on-campus and off-campus.Hope this website may suffice your all college needs :)</p>
+        </div>
       </div>
-    </div>
     </>
   )
 }
