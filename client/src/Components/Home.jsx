@@ -1,7 +1,4 @@
 import React from 'react'
-import vg from "../Assets/2.webp"
-import Firstyear from './First_year'
-// import vg from "../Assets/book-stack.png"
 import { Link } from "react-router-dom"
 
 
@@ -16,20 +13,20 @@ const Home = () => {
     </div>
       <div className="home2" id="notes">
         <div className='sidenote'>
-              Notes
+        <Link to={"/firstyear"}>Notes</Link>
         </div>
         <div className='box'>
             <div className="note1">
                   <div className="pic1"></div>
-                  <h5><a>First year</a></h5>
+                  <h5><Link to={"/firstyear"}>First Year</Link></h5>
             </div>
             <div className="note2">
                   <div className="pic2"></div>
-                  <h5>Second Year</h5></div>
+                  <h5><Link to={"/secondyear"}>Second Year</Link></h5></div>
             <div className="note3">
                   <div className="pic3">
                   </div>
-                  <h5>Third year</h5></div>
+                  <h5><Link to={"/thirdyear"}>Third Year</Link></h5></div>
             </div>
       </div>
     <div className="home3" id="finance">
@@ -48,7 +45,7 @@ const Home = () => {
       </div>
       <div className="home4" id="societies">
         <div className='sidenote' title='Click here to view more'>
-              <Link to={"/societies"}>Societies</Link>
+              <Link to={"/societie"}>Societies</Link>
               
         </div>
         <div className='box'>

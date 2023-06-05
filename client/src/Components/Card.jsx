@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Card.scss"
+// import "../Styles/Card.scss"
 
 const Card = (props) => {
   return (
