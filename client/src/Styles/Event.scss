@@ -20,11 +20,14 @@
     // overflow-x:
 
     > h1 {
-        font-size: 50px;
+        font-size: 45px;
         margin: 20px ;
-        font-family: 'Merriweather', serif;
+        font-family: 'Raleway', sans-serif;
     }
-
+    > h5{
+        font-size: 22px;
+        font-family: 'Raleway', sans-serif;
+    }
     > .cards {
         width: 100%;
         display: flex ;
