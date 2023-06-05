@@ -1,5 +1,6 @@
 import React from 'react'
 import vg from "../Assets/2.webp"
+import Firstyear from './First_year'
 // import vg from "../Assets/book-stack.png"
 import { Link } from "react-router-dom"
 
@@ -20,7 +21,7 @@ const Home = () => {
         <div className='box'>
             <div className="note1">
                   <div className="pic1"></div>
-                  <h5>First year</h5>
+                  <h5><a>First year</a></h5>
             </div>
             <div className="note2">
                   <div className="pic2"></div>
