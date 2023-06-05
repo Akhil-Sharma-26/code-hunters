@@ -86,7 +86,7 @@ const Home = () => {
             </div>
         </div>
         <div className='sidenote'>
-               Events
+            <Link to={"/events"}>Events</Link>
         </div>
       </div>
       <div className="home6" id="aboutus">
