@@ -11,7 +11,7 @@ import Footer from "./Components/Footer";
 import "./Styles/Footer.scss";
 import Event from "./Components/Event";
 import "./Styles/Event.scss";
-import Firstyear from "./Components/First_year";
+
 const App = () => {
   return (
     // <div>
@@ -23,7 +23,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/societies" element={<Societies />} />
         <Route path="/events" element={<Event />} />
-        <Route path="/notes" element={<Firstyear/>}/>
+        {/* <Route path="/notes" element={<Firstyear />} /> */}
       </Routes>
       <Footer />
     </Router>
