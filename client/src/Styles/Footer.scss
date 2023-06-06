@@ -1,5 +1,5 @@
 footer{
-    background-color:  white;
+    background-color: rgba($color: #ffffff, $alpha: 0.3);
     height: 150px;
     width: 100%;
     padding : 10px ;
@@ -10,6 +10,8 @@ footer{
     justify-content: center;
     // margin : -100px;
     border-radius: 50px 0 0 50px ;
+    // backgroud-opacity: 0.4;
+    // position: relative;
 
     > div {
         display: flex;
