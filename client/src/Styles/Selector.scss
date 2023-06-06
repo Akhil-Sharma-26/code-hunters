@@ -1,29 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-$colors: (
-  #f47272,
-  #65f965,
-  #61ffea,
-  #ff6fffdf,
-  #FFFF00
+$colors: (#f47272, #65f965, #61ffea, #ff6fffdf, #ffff00);
+$random_index: random(
+  $limit: length($colors),
 );
-$random_index : random($limit: length($colors));
 
-.body2{
-    background-color: white;
-    height: 9vh;;
-    border-radius: 15px ;
-    box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
-    transition: box-shadow,background-color 0.3s ease;
-    > h3 {
-        padding: 3vh ;
-        font-family: 'Raleway', sans-serif;
-        font-size: 3vh;
-    }
-    margin: 15px;
+.body2 {
+  background-color: white;
+  height: 9vh;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+  transition: box-shadow, background-color 0.3s ease;
+  > h3 {
+    padding: 3vh;
+    font-family: "Raleway", sans-serif;
+    font-size: 3vh;
+  }
+  margin: 15px;
 }
 
-.body2:hover{
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
-    background-color: nth($list: $colors, $n: $random_index);
+.body2:hover {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+  background-color: nth($list: $colors, $n: $random_index);
 }

@@ -4,13 +4,13 @@ import React from "react";
 const Card = (props) => {
   return (
     <>
-    <div className="body">
+      <div className="body">
         <div className="logo"></div>
         <h3 className="name">{props.name}</h3>
         <p className="description">{props.desc}</p>
-    </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
