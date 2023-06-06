@@ -3,12 +3,28 @@ import Card from './Card'
 
 const Event = () => {
 
-    const array = [ 'HackTU', 'ImagineCup' , 'GSoC', 'NewEvent' , 'a' , 'a' , "a"]
+    const objectArr = [ 
+        {
+            'name': 'HackTU',
+            'pic': '../Assests/HACKTU.png',
+            'desc': "Creative computing Society is back with HackTU, flagship event to be hosted at Thapar Institute of Engineering and Technology, Patiala and we're excited to see what new and exciting ideas will come out of this year's event"
+        },
+        {
+            'name': 'Imagine Cup',
+            'pic': '../Assests/ic.jpg',
+            'desc': "Creative computing Society is back with HackTU, flagship event to be hosted at Thapar Institute of Engineering and Technology, Patiala and we're excited to see what new and exciting ideas will come out of this year's event"
+        },
+        {
+            'name': 'Google Summer of code',
+            'pic': '../Assests/ic.jpg',
+            'desc': "Google Summer of Code is a global, online program focused on bringing new contributors into open source software development. GSoC Contributors work with an open source organization on a 12+ week programming project under the guidance of mentors."
+        }
+    ]
 
   return (
     <div className='event'>
         <h1>Events</h1>
-        
+        <h5>From Bytes to Brushstrokes: Unleash Your Potential at these Amazing Tech and Non-Tech Events</h5>
         {/* <div className="cards">
             {/* <div className="c1" id='cd1'>
                 <div className="pic1"></div>
@@ -30,9 +46,13 @@ const Event = () => {
         {/* <Card name="HackTU"/> */}
         <div className='cards'> 
         {
-            array.map((i) => (
-                <Card name={i} key={i}/>
+            objectArr.map((i) => (
+                <Card name={i.name} desc={i.desc} key={i}/>
             ))
+        }
+
+        {
+            // picarray.map( (i) => )
         }
         </div>
     </div>

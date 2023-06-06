@@ -1,11 +1,19 @@
-import React from 'react'
-import vg from "../Assets/2.webp"
-import Firstyear from './First_year'
-// import vg from "../Assets/book-stack.png"
+import React, {useState} from 'react'
 import { Link } from "react-router-dom"
-
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 const Home = () => {
+
+      const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = (user) => {
+    // Perform necessary login validation, e.g., with your backend server
+    // ...
+
+    // Simulate successful login
+    setIsLoggedIn(true);
+  };
+
   return (
     <>
     <div className='home' id='home'>
@@ -16,39 +24,40 @@ const Home = () => {
     </div>
       <div className="home2" id="notes">
         <div className='sidenote'>
-              Notes
+        <Link to={"/firstyear"}>Notes</Link>
         </div>
         <div className='box'>
             <div className="note1">
                   <div className="pic1"></div>
-                  <h5><a>First year</a></h5>
+                  <h5><Link to={"/firstyear"}>First Year</Link></h5>
             </div>
             <div className="note2">
                   <div className="pic2"></div>
-                  <h5>Second Year</h5></div>
+                  <h5><Link to={"/secondyear"}>Second Year</Link></h5></div>
             <div className="note3">
                   <div className="pic3">
                   </div>
-                  <h5>Third year</h5></div>
+                  <h5><Link to={"/thirdyear"}>Third Year</Link></h5></div>
             </div>
       </div>
     <div className="home3" id="finance">
         <div className='box'>
             <div className="note1">
                   <div className="pic1"></div>
-                  <h5>Bank & Loans</h5>
+                  <h5><Link to={"/banks"}>Banks & Loans</Link></h5>
             </div>
             <div className="note2">
                   <div className="pic2"></div>
                   <h5>Scholarships</h5></div>
         </div>
         <div className='sidenote'>
-        <Link to={"*"}>Financial<br/>Assistance</Link>
+        <Link to={"/finance"}>Financial<br/>Assistance</Link>
+      
         </div>
       </div>
       <div className="home4" id="societies">
         <div className='sidenote' title='Click here to view more'>
-              <Link to={"/societies"}>Societies</Link>
+              <Link to={"/societie"}>Societies</Link>
               
         </div>
         <div className='box'>

@@ -14,17 +14,36 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    // background-image: url('../Assets/BGMI.jpeg');
-    background-size: cover;
+    // background-image: url('../Assets/events.jpeg');
+    background-size:cover;
+    // background-repeat: no-repeat;
     // filter: blur(5px);
     // overflow-x:
 
     > h1 {
-        font-size: 50px;
+        font-size: 45px;
         margin: 20px ;
-        font-family: 'Merriweather', serif;
+        font-family: 'Raleway', sans-serif;
     }
+    > h5{
+        font-size: 22px;
+        font-family: 'Raleway', sans-serif;
+        animation: typing 3s steps(40) 0s infinite;
+        overflow: hidden;
+        height: 26px;
+        text-align: center;
 
+        @keyframes typing {
+            from {
+                width: 0;
+              }
+              to {
+                width: 100%;
+              }
+        }
+
+
+    }
     > .cards {
         width: 100%;
         display: flex ;

@@ -7,12 +7,20 @@
   // filter: blur(2px); !This blur command is not working properly.. @Anush Kindly check it
     width: 100%;
     height: 100%;
-    background-color: antiquewhite;
+    background-color:white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 150px;
 
+    >.moreCards{
+      display: flex;
+      max-width: 90vw;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
     
     > .cards {
         width: 100%;
@@ -43,14 +51,14 @@
 
             
             > .pic1,
-        > .pic2,
-      > .pic3 {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+            > .pic2,
+            > .pic3 {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
 
       > .pic1 > img,
       > .pic2 > img,
@@ -98,6 +106,19 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    
+    > button{
+      border: none;
+      background-color: white;
+      border-radius: 5px;
+      padding: 5px ;
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+      transition: box-shadow 0.3s ease;
+    }
+    >button:hover{
+      box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.6);
+    }
+
   }
   
   .show-more-link {

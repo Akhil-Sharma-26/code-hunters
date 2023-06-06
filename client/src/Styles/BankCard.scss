@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+.bankCard{
+    width: 60vw;
+    height: 42vh;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px rgba($color: #000000, $alpha: 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow,background-color 0.35s ease;
+    margin: 20px;
+    > .photo{
+        width: 30vw;
+        height: 40vh;
+        background-color: black;
+        background-image: url('../Assets/BAnk1.jpeg');
+        background-size: cover;
+        box-shadow: 0px 0px 8px rgba($color: #000000, $alpha: 0.3);
+        border-radius: 20px;
+        margin: 10px;
+        position: relative;
+        transition: box-shadow 0.3s ease;
+        transition: width 0.80s ease;
+    }
+    > .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        width: 30vw;
+        height: 40vh;
+        >.name{
+            font-family: 'Raleway', sans-serif;
+            font-size: 35px;
+        }
+        >.services{
+            margin: 30px;
+            >.service{
+                margin: 10px;
+                font-size: 20px;
+                text-align: center;
+                font-family: 'Raleway', sans-serif;
+            }
+        }
+        >.address{
+            font-family: 'Raleway', sans-serif;
+            font-size: 20px;
+        }
+    }
+}
+
+.bankCard:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+    background-color: greenyellow;
+    > .photo{
+        // height: 0;
+        width: 0;
+    }
+    > .content{
+        >.name:hover{
+            color: white;
+        }
+        >.services{
+            >.service:hover{
+                color : white;
+            }
+        }
+        >.address:hover{
+            color: white;
+        }
+    }
+}

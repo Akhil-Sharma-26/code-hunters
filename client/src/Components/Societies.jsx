@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Card from './Card';
 
 import "../Styles/Societies.scss";
 import Header from "./Header";
@@ -14,7 +15,7 @@ const Societies = () => {
     {
       id: 1,
       name: 'Creative Coding Society',
-      imgSrc: '../Assets/ccs_logo',
+      imgSrc: './Assets/ccs_logo',
     },
     {
       id: 2,
@@ -64,27 +65,20 @@ const Societies = () => {
       <div className='societies'>
         <h1>Societies</h1>
         <div className="cards">
-          {societies.slice(0, 3).map((society) => (
-            <div className="c1" key={society.id}>
-              <div className="pic">
-                <img src={society.imgSrc} alt={society.name} />
-              </div>
-              <h3>{society.name}</h3>
-            </div>
-          ))}
+        {
+            societies.slice(0, 3).map( (i) => (
+            <Card name={i.name} desc="Sample Description here, will UPDATE photos as well as the Description once all other work is completed." img={i.imgSrc}  key={i.id} />
+            ))
+        }
         </div>
-        {showMore && (
-          <div className="cards">
-            {societies.slice(4, 9).map((society) => (
-            <div className="c1" key={society.id}>
-              <div className="pic">
-                <img src={society.imgSrc} alt={society.name} />
-              </div>
-              <h3>{society.name}</h3>
-            </div>
-          ))}
-          </div>
-        )}
+        <div className='moreCards'>
+            {   
+                showMore && (
+                societies.slice(4, 9).map( (i) => (
+                <Card name={i.name} desc="Sample Description here, will UPDATE photos as well as the Description once all other work is completed." key={i.id}/>
+                )))
+            }
+        </div>
         <div className="show-more">
           <button onClick={toggleShowMore} className="show-more-link">
             {showMore ? "Show less" : "Show more"}
