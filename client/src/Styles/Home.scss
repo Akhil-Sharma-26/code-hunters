@@ -23,7 +23,7 @@
         > h1 { 
             font-size: 60px;
             font-family: 'Raleway', sans-serif;
-            color: black;
+            color: white;
             z-index: 1;
             backdrop-filter: blur(2px);
         }
@@ -31,7 +31,7 @@
         > p {
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: 27px;
-            color: black;
+            color:white;
             z-index: 1;
             text-align: right;
             // backdrop-filter: blur(3px);
@@ -45,7 +45,7 @@
         width: 90%;
         height: 100%;
         position: absolute;
-        background: no-repeat left url("../Assets/graduation-cap.png") ;
+        // background: no-repeat left url("../Assets/graduation-cap.png") ;
         z-index: 0 ;
         // background-image: url("../Assets/1.png");
         // background-repeat: no-repeat;
@@ -60,7 +60,7 @@
 .home2 {
     width: 100%;
     height : 100vh ;
-    background-color: white;
+    // background-color: white;
     padding: 500px 0 ;
     display: flex;
     align-items:center;
@@ -70,15 +70,18 @@
     // filter: blur(2px);
     // background-size: cover;
     z-index: -1;
+    color: white;
+
 
    > .sidenote{
-    color: red;
+    // color: white;
     padding: 111px;
     font-size: 75px;
     margin-bottom: 190px ;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    color: black;
+    
+    // color: white;
            
    }
 
@@ -89,7 +92,8 @@
     justify-content: center;
     width: 70vw;
     // background-color: #FFE7AF;
-    background-color: #EF314C;
+    // background-color: #EF314C;
+    // background-color: 10415B; // !
     box-shadow:  0px 0px 40px rgba($color: #000000, $alpha: 0.5);
     margin-top: -200px ;
     height: 50vh;
@@ -97,7 +101,7 @@
     z-index: 1;
     // border-style: none;
     padding: 10px;
-    border: 5px solid black;
+    // border: 5px solid white;
     border-right: none;
 
     // > img {
@@ -116,7 +120,7 @@
     //     // backdrop-filter: blur(2px);
 
     //     > p {
-    //         color : black;
+    //         color : white;
     //         letter-spacing: 2px ;
     //         word-spacing: 5px ;
     //         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -135,8 +139,8 @@
             height: 42vh;
             border-radius: 60px;
             box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
-            background-color: #FFE7AF;
-            border: 5px solid black;
+            // background-color: #FFE7AF;
+            // border: 5px solid white;
             // padding: 50px;;
 
             > .pic1 {
@@ -149,6 +153,8 @@
                 // padding: 10px;
                 margin-top: 0px;
                 margin-bottom: 10px;
+                color: white;
+                align-content: center;
             }
             > .pic2 {
                 background-image: url("../Assets/notes.png");
@@ -221,10 +227,10 @@
 
 //         > h1 {
 //             text-transform: uppercase;
-//             border-bottom: 2px black;
+//             border-bottom: 2px white;
 //             padding : 4px ;
 //             // width: 50px;
-//             color: black;
+//             color: white;
 //         }
 
 //         > p {
@@ -240,7 +246,7 @@
 .home3 {
     width: 100%;
     height : 100vh ;
-    background-color: white;
+    // background-color: white;
     padding: 500px 0 ;
     display: flex;
     align-items:center;
@@ -258,7 +264,7 @@
     margin-bottom: 190px ;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    color: black;
+    color: white;
     // margin-right: -20px;
     margin-left: 45px;
     text-align: center;
@@ -272,7 +278,7 @@
     justify-content: center;
     width: 50vw;
     // background-color: #FFE7AF;
-    background-color: #34EB8F;
+    // background-color: #34EB8F;
     box-shadow:  0px 0px 40px rgba($color: #000000, $alpha: 0.5);
     margin-top: -200px ;
     height: 50vh;
@@ -280,7 +286,7 @@
     z-index: 1;
     // border-style: none;
     padding: 0px;
-    border: 5px solid black;
+    // border: 5px solid white;
     border-left: none;
 
     // > img {
@@ -299,7 +305,7 @@
     //     // backdrop-filter: blur(2px);
 
     //     > p {
-    //         color : black;
+    //         color : white;
     //         letter-spacing: 2px ;
     //         word-spacing: 5px ;
     //         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -319,7 +325,7 @@
             border-radius: 60px;
             box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
             background-color: #FFE7AF;
-            border: 5px solid black;
+            border: 5px solid white;
             // padding: 50px;;
 
             > .pic1 {
@@ -379,7 +385,7 @@
 .home4 {
     width: 100%;
     height : 100vh ;
-    background-color: white;
+    // background-color: white;
     padding: 500px 0 ;
     display: flex;
     align-items:center;
@@ -397,7 +403,7 @@
     margin-bottom: 190px ;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    color: black;
+    color: white;
    }   
 
    > .box {
@@ -407,7 +413,7 @@
     justify-content: center;
     width: 70vw;
     // background-color: #FFE7AF;
-    background-color: #0BCEDE;
+    // background-color: #0BCEDE;
     box-shadow:  0px 0px 40px rgba($color: #000000, $alpha: 0.5);
     margin-top: -200px ;
     height: 50vh;
@@ -415,9 +421,9 @@
     z-index: 1;
     // border-style: none;
     padding: 10px;
-    border: 5px solid black;
+    // border: 5px solid white;
     border-right: none;
-    background-color: #EF314C;
+    // background-color: #EF314C;
 
     // > img {
     //     width: 30%;
@@ -435,7 +441,7 @@
     //     // backdrop-filter: blur(2px);
 
     //     > p {
-    //         color : black;
+    //         color : white;
     //         letter-spacing: 2px ;
     //         word-spacing: 5px ;
     //         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -454,9 +460,9 @@
             height: 42vh;
             border-radius: 60px;
             box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
-            background-color: #FFE7AF;
+            // background-color: #FFE7AF;
             // padding: 50px;;
-            border: 5px solid black;
+            // border: 5px solid white;
            
 
             > .pic1 {
@@ -533,7 +539,7 @@
 .home5 {
     width: 100%;
     height : 100vh ;
-    background-color: white;
+    // background-color: white;
     padding: 500px 0 ;
     display: flex;
     align-items:center;
@@ -551,7 +557,7 @@
     margin-bottom: 190px ;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    color: black;
+    color: white;
     // margin-right: 20px;
     margin-left: -45px;
     text-align: center;
@@ -566,7 +572,7 @@
     justify-content: center;
     width: 70vw;
     // background-color: #FFE7AF;
-    background-color: #34EB8F;
+    // background-color: #34EB8F;
     box-shadow:  0px 0px 40px rgba($color: #000000, $alpha: 0.5);
     margin-top: -200px ;
     height: 50vh;
@@ -574,7 +580,7 @@
     z-index: 1;
     // border-style: none;
     padding: 0px;
-    border: 5px solid black;
+    // border: 5px solid white;
     border-left: none;
 
     // > img {
@@ -593,7 +599,7 @@
     //     // backdrop-filter: blur(2px);
 
     //     > p {
-    //         color : black;
+    //         color : white;
     //         letter-spacing: 2px ;
     //         word-spacing: 5px ;
     //         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -613,7 +619,7 @@
             border-radius: 60px;
             box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
             background-color: #FFE7AF;
-            border: 5px solid black;
+            border: 5px solid white;
             // padding: 50px;;
 
             > .pic1 {
@@ -687,7 +693,7 @@
 .home6 {
     width: 100%;
     height : 70vh ;
-    background-color: white;
+    // background-color: white;
     padding: 500px 0 ;
     display: flex;
     align-items:center;
@@ -700,13 +706,13 @@
     padding-bottom: 201px;
 
    > .sidenote{
-    color: red;
+    color: white;
     padding: 111px;
     font-size: 75px;
     margin-bottom: 190px ;
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
-    color: black;
+    color: white;
     // padding-right: 0px;
     text-align: center;
    }   
@@ -717,7 +723,7 @@
     align-items: center;
     justify-content: center;
     width: 70vw;
-    background-color: #0BCEDE;
+    // background-color: #0BCEDE;
     box-shadow:  0px 0px 40px rgba($color: #000000, $alpha: 0.5);
     margin-top: -200px ;
     height: 50vh;
@@ -725,9 +731,9 @@
     z-index: 1;
     // border-style: none;
     padding: 10px;
-    border: 5px solid black;
+    // border: 5px solid white;
     border-right: none;
-    background-color: #EF314C;
+    // background-color: #EF314C;
 
     > p {
         font-family: 'Raleway', sans-serif;
@@ -737,7 +743,95 @@
         font-size:20px;
         font-weight: bold;
         text-align: center;
+        color: #FFE7AF;
     }
 
     }
 }
+.scroll{
+    height: 100vh; /* Adjust the height as per your requirements */
+//   background-image: url('../Assets/94b09381881491.5d0c8dfda928a.jpg');
+background-image: url('../Assets/background_home.webp');
+  background-size: cover; /* Adjust the background size as per your requirements */
+  overflow-y: scroll; /* Enable vertical scrolling */
+//   background-blend-mode: ;
+}
+.home2 {
+    .sidenote {
+      a {
+        color: white; /* Set your desired color here */
+      }
+    }
+    .box {
+        .note1, .note2, .note3 {
+          h5 {
+            a {
+              color: #FFE7AF; // Set your desired color here
+            }
+          }
+        }
+      }
+  }
+  .home3{
+    .sidenote{
+        a{
+            color: white;
+        }
+    }
+    // COlor not changing
+
+    .box{
+        .note1{
+            .pic1{
+                h5{
+                    a{
+                    
+                        color:white;
+                    }
+                    }
+            }
+        }
+    }
+    
+  }
+  .home4{
+    .sidenote{
+        a{
+            color: white;
+        }
+    }
+  }
+  .home5{
+    .sidenote{
+        a{
+            color: white;
+        }
+    }
+    .box {
+        .note1 {
+            .pic1{
+          h5 {
+            a {
+              color: white; // Set your desired color here
+            }
+          }}
+        }
+      }
+  }
+  .home6{
+    .sidenote{
+        a{
+            color: white;
+        }
+    }
+  }
+  .home4 {
+    .box {
+      .note1,
+      .note2 {
+        h5 a {
+          color: #FFE7AF; // Set your desired color here
+        }
+      }
+    }
+  }

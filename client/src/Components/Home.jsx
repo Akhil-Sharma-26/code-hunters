@@ -1,9 +1,12 @@
 import React, {useState} from 'react'
 import { Link } from "react-router-dom"
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
+import Image from "react-dom";
+import Footer from './Footer';
+import Header from './Header';
 
 const Home = () => {
-
+      const [imageUrl, setImageUrl] = useState("https://example.com/image.jpg");
       const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogin = (user) => {
@@ -16,6 +19,8 @@ const Home = () => {
 
   return (
     <>
+    
+    <div className='scroll'>
     <div className='home' id='home'>
         <main>
           <h1>MyHerupa 2</h1>
@@ -24,7 +29,7 @@ const Home = () => {
     </div>
       <div className="home2" id="notes">
         <div className='sidenote'>
-        <Link to={"/firstyear"}>Notes</Link>
+            <Link to={"/firstyear"}>Notes</Link>
         </div>
         <div className='box'>
             <div className="note1">
@@ -106,6 +111,8 @@ const Home = () => {
             <p>Welcome to our educational website! We are a dedicated platform committed to supporting students on their educational journey. We offer a wide range of resources, including valuable notes generously shared by seniors, to help you succeed academically.We understand that financial challenges can often hinder educational pursuits. That's why we provide comprehensive financial guidance, empowering you to navigate the complex world of scholarships, grants, and other financial aid options.In addition to academic support and financial guidance, we believe in the power of community and collaboration, that's why we provide you with the news of all the events that are going on-campus and off-campus.Hope this website may suffice your all college needs :)</p>
         </div>
       </div>
+      </div>
+      
     </>
   )
 }
