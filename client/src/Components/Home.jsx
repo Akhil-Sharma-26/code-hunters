@@ -1,8 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from "react-router-dom"
-
+import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 const Home = () => {
+
+      const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = (user) => {
+    // Perform necessary login validation, e.g., with your backend server
+    // ...
+
+    // Simulate successful login
+    setIsLoggedIn(true);
+  };
+
   return (
     <>
     <div className='home' id='home'>
@@ -33,14 +44,15 @@ const Home = () => {
         <div className='box'>
             <div className="note1">
                   <div className="pic1"></div>
-                  <h5>Bank & Loans</h5>
+                  <h5><Link to={"/banks"}>Banks & Loans</Link></h5>
             </div>
             <div className="note2">
                   <div className="pic2"></div>
                   <h5>Scholarships</h5></div>
         </div>
         <div className='sidenote'>
-        <Link to={"*"}>Financial<br/>Assistance</Link>
+        <Link to={"/finance"}>Financial<br/>Assistance</Link>
+      
         </div>
       </div>
       <div className="home4" id="societies">

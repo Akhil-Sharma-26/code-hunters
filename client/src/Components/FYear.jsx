@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Selector from './Selector'
 
 const FYear = () => {
@@ -10,14 +10,14 @@ const FYear = () => {
         'CSE Branch',
         'COBS Branch'
     ]
-
   return (
     <div className="body1">
         <h1 className="select">Select Your Branch/Pool</h1>
         <div className="Cards">
             {
                 subjectarray.map( (i) => (
-                    <Selector name = {i} key={i} />
+                    <Selector name={i}/>
+
                 ))
             }
         </div>

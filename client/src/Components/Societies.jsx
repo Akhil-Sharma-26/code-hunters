@@ -67,7 +67,7 @@ const Societies = () => {
         <div className="cards">
         {
             societies.slice(0, 3).map( (i) => (
-            <Card name={i.name} desc={i.imgSrc} img={i.imgSrc}  key={i.id} />
+            <Card name={i.name} desc="Sample Description here, will UPDATE photos as well as the Description once all other work is completed." img={i.imgSrc}  key={i.id} />
             ))
         }
         </div>
@@ -75,7 +75,7 @@ const Societies = () => {
             {   
                 showMore && (
                 societies.slice(4, 9).map( (i) => (
-                <Card name={i.name} desc={i.imgSrc} key={i.id}/>
+                <Card name={i.name} desc="Sample Description here, will UPDATE photos as well as the Description once all other work is completed." key={i.id}/>
                 )))
             }
         </div>
