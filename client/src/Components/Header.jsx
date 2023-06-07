@@ -14,6 +14,7 @@ const Header = () => {
           <HashLink to = {"/#events"}>Events</HashLink>
           <HashLink to = {"/#aboutus"}>About us</HashLink>
           {/* HashLink sirf wo hi pages karne hain jo scroll kar ke access kiye ja sakte hain and jinke liye alag se page bnana hai unke liye sirf link */}
+          <Link to = {'/other'}>Others</Link>
         </main>
     </nav>
   )
