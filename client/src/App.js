@@ -26,6 +26,8 @@ import "./Styles/SYear.scss";
 import Banks from "./Components/Banks";
 import "./Styles/Banks.scss";
 import "./Styles/BankCard.scss";
+import Other from "./Components/Other";
+import "./Styles/Other.scss";
 
 const App = () => {
   return (
@@ -42,6 +44,7 @@ const App = () => {
         <Route path="/secondyear" element={<SYear />} />
         <Route path="/thirdyear" element={<TYear />} />
         <Route path="/banks" element={<Banks />} />
+        <Route path="/other" element={<Other />} />
       </Routes>
       <Footer />
     </Router>

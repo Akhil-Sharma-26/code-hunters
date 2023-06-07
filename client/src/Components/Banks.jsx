@@ -1,8 +1,13 @@
-import React from 'react'
+import React, {useState} from 'react'
 import BankCard from './BankCard'
 
-const Banks = () => {
 
+const Banks = () => {
+    const [isDarkTheme, setIsDarkTheme] = useState(true);
+
+  const handleThemeToggle = () => {
+    setIsDarkTheme(!isDarkTheme);
+  };
     const bankArray = [
         {
             name : "ICICI Bank",
@@ -15,13 +20,19 @@ const Banks = () => {
     ]
 
   return (
-    <div className='bodyBank'>
+    <>
+    <div className={isDarkTheme ? 'bodyBank' : 'bodyBankDark'}>
+    {/* <button
+    //   className={isDarkTheme ? 'dark' : 'light'} // Apply the theme class dynamically
+      onClick={handleThemeToggle}
+    >Dark Mode</button> */}
         {
             bankArray.map( (i) => (
-                <BankCard name = { i.name } addr = { i.addr }/>
+                <BankCard name = { i.name } addr = { i.addr } />
             ))
         }
     </div>
+    </>
   )
 }
 

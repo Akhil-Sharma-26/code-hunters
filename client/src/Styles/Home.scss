@@ -1,103 +1,100 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
-.home{
+.home {
+  // background-color: #2980b9;
+  width: 100%;
+  height: 100vh;
+  border: null;
+  border-radius: 0 0 200px 200px;
 
-    // background-color: #2980b9;
+  > main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     width: 100%;
-    height : 100vh;
-    border : null;
-    border-radius: 0 0 200px 200px  ;
+    height: 100%;
+    justify-content: center;
+    padding: 20px;
+    // z-index: ;
+    // filter: blur(4px);
 
-    > main {
-
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        width : 100% ;
-        height: 100%;
-        justify-content: center;
-        padding: 20px;
-        // z-index: ;
-        // filter: blur(4px);
-
-        > h1 { 
-            font-size: 60px;
-            font-family: 'Raleway', sans-serif;
-            color: black;
-            z-index: 1;
-            backdrop-filter: blur(2px);
-        }
-
-        > p {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-size: 27px;
-            color: black;
-            z-index: 1;
-            text-align: right;
-            // backdrop-filter: blur(3px);
-            // margin-bottom: 70vh;
-        }
-
+    > h1 {
+      font-size: 60px;
+      font-family: "Raleway", sans-serif;
+      color: white;
+      z-index: 1;
+      backdrop-filter: blur(2px);
     }
 
-    &::before{ 
-        content: "";
-        width: 90%;
-        height: 100%;
-        position: absolute;
-        background: no-repeat left url("../Assets/graduation-cap.png") ;
-        z-index: 0 ;
-        // background-image: url("../Assets/1.png");
-        // background-repeat: no-repeat;
-        // background-position: center;
-        // filter: blur( 3px );
-        border-radius: 0 0 200px 200px  ;
+    > p {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      font-size: 27px;
+      color: white;
+      z-index: 1;
+      text-align: right;
+      // backdrop-filter: blur(3px);
+      // margin-bottom: 70vh;
     }
-    
-    
+  }
+
+  &::before {
+    content: "";
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    // background: no-repeat left url("../Assets/graduation-cap.png") ;
+    z-index: 0;
+    // background-image: url("../Assets/1.png");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // filter: blur( 3px );
+    border-radius: 0 0 200px 200px;
+  }
 }
 
 .home2 {
-    width: 100%;
-    height : 100vh ;
-    background-color: white;
-    padding: 500px 0 ;
-    display: flex;
-    align-items:center;
-    justify-content:right;
-    margin-top: -200px ;
-    // background-image: url("../Assets/3.jpeg");
-    // filter: blur(2px);
-    // background-size: cover;
-    z-index: -1;
+  width: 100%;
+  height: 100vh;
+  // background-color: white;
+  padding: 500px 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: -200px;
+  // background-image: url("../Assets/3.jpeg");
+  // filter: blur(2px);
+  // background-size: cover;
+  z-index: -1;
+  color: white;
 
-   > .sidenote{
-    color: red;
+  > .sidenote {
+    // color: white;
     padding: 111px;
     font-size: 75px;
-    margin-bottom: 190px ;
-    font-family: 'Raleway', sans-serif;
+    margin-bottom: 190px;
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
-    color: black;
-           
-   }
 
-   > .box {
+    // color: white;
+  }
 
+  > .box {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70vw;
     // background-color: #FFE7AF;
-    background-color: #EF314C;
-    box-shadow:  0px 0px 40px rgba($color: #000000, $alpha: 0.5);
-    margin-top: -200px ;
+    // background-color: #EF314C;
+    // background-color: 10415B; // !
+    box-shadow: 0px 0px 40px rgba($color: #000000, $alpha: 0.5);
+    margin-top: -200px;
     height: 50vh;
-    border-radius: 67px 0 0 67px  ;
+    border-radius: 67px 0 0 67px;
     z-index: 1;
     // border-style: none;
     padding: 10px;
-    border: 5px solid black;
+    // border: 5px solid white;
     border-right: none;
 
     // > img {
@@ -116,89 +113,86 @@
     //     // backdrop-filter: blur(2px);
 
     //     > p {
-    //         color : black;
+    //         color : white;
     //         letter-spacing: 2px ;
     //         word-spacing: 5px ;
     //         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     //     }
-  //    }
+    //    }
 
     > div {
-        display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            width: 23vw;;
-            // background-color: #58C4C3;
-            margin: 20px ;
-            height: 42vh;
-            border-radius: 60px;
-            box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
-            background-color: #FFE7AF;
-            border: 5px solid black;
-            // padding: 50px;;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 23vw;
+      // background-color: #58C4C3;
+      margin: 20px;
+      height: 42vh;
+      border-radius: 60px;
+      box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
+      // background-color: #FFE7AF;
+      // border: 5px solid white;
+      // padding: 50px;;
 
-            > .pic1 {
-                background-image: url("../Assets/notes.png");
-                width: 15vw;
-                height: 25vh;
-                background-size:contain;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                // padding: 10px;
-                margin-top: 0px;
-                margin-bottom: 10px;
-            }
-            > .pic2 {
-                background-image: url("../Assets/notes.png");
-                width: 15vw;
-                height: 25vh;
-                background-size: contain;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                // padding: 10px;
-                margin-top: 0px;
-                margin-bottom: 10px;
-            }
-            > .pic3 {
-                background-image: url("../Assets/notes.png");
-                width: 15vw;
-                height: 25vh;
-                background-size: contain;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                // padding: 10px;
-                margin-top: 0px;
-                margin-bottom: 10px;
-            }
-            > h5{
-                font-size: 27px;
-                font-family: 'Raleway', sans-serif; ;
-                margin-top: 10px;
-            }
-
+      > .pic1 {
+        background-image: url("../Assets/notes.png");
+        width: 15vw;
+        height: 25vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        // padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        color: white;
+        align-content: center;
+      }
+      > .pic2 {
+        background-image: url("../Assets/notes.png");
+        width: 15vw;
+        height: 25vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        // padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+      > .pic3 {
+        background-image: url("../Assets/notes.png");
+        width: 15vw;
+        height: 25vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        // padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+      > h5 {
+        font-size: 27px;
+        font-family: "Raleway", sans-serif;
+        margin-top: 10px;
+      }
     }
 
-    > div:hover{
-
-        animation: imgUp 0.2s linear 2 alternate;
-
-        @keyframes imgUp {
-            to {
-                transform: translateY(  -10px );
-            }
+    > div:hover {
+      animation: imgUp 0.2s linear 2 alternate;
+      @keyframes imgUp {
+        to {
+          transform: translateY(-10px);
         }
+      }
     }
-
-    }
+  }
 }
 
-
 @keyframes imgUp {
-    to {
-        transform: translateY( - 10px );
-    }
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 // .home3{
@@ -221,10 +215,10 @@
 
 //         > h1 {
 //             text-transform: uppercase;
-//             border-bottom: 2px black;
+//             border-bottom: 2px white;
 //             padding : 4px ;
 //             // width: 50px;
-//             color: black;
+//             color: white;
 //         }
 
 //         > p {
@@ -238,49 +232,47 @@
 // }
 
 .home3 {
-    width: 100%;
-    height : 100vh ;
-    background-color: white;
-    padding: 500px 0 ;
-    display: flex;
-    align-items:center;
-    justify-content:left;
-    margin-top: -400px ;
-    // background-image: url("../Assets/3.jpeg");
-    // filter: blur(2px);
-    // background-size: cover;
-    z-index: -1;
+  width: 100%;
+  height: 100vh;
+  // background-color: white;
+  padding: 500px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: -400px;
+  // background-image: url("../Assets/3.jpeg");
+  // filter: blur(2px);
+  // background-size: cover;
+  z-index: -1;
 
-   > .sidenote{
+  > .sidenote {
     color: red;
     padding: 111px;
     font-size: 75px;
-    margin-bottom: 190px ;
-    font-family: 'Raleway', sans-serif;
+    margin-bottom: 190px;
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
-    color: black;
+    color: white;
     // margin-right: -20px;
     margin-left: 45px;
     text-align: center;
-           
-   }
+  }
 
-   > .box {
-
+  > .box {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 50vw;
     // background-color: #FFE7AF;
-    background-color: #34EB8F;
-    box-shadow:  0px 0px 40px rgba($color: #000000, $alpha: 0.5);
-    margin-top: -200px ;
+    // background-color: #34EB8F;
+    box-shadow: 0px 0px 40px rgba($color: #000000, $alpha: 0.5);
+    margin-top: -200px;
     height: 50vh;
-    border-radius: 0 67px 67px 0  ;
+    border-radius: 0 67px 67px 0;
     z-index: 1;
     // border-style: none;
     padding: 0px;
-    border: 5px solid black;
+    // border: 5px solid white;
     border-left: none;
 
     // > img {
@@ -299,125 +291,118 @@
     //     // backdrop-filter: blur(2px);
 
     //     > p {
-    //         color : black;
+    //         color : white;
     //         letter-spacing: 2px ;
     //         word-spacing: 5px ;
     //         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     //     }
-  //    }
+    //    }
 
     > div {
-        display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            width: 23vw;;
-            // background-color: #58C4C3;
-            margin: 20px ;
-            height: 42vh;
-            border-radius: 60px;
-            box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
-            background-color: #FFE7AF;
-            border: 5px solid black;
-            // padding: 50px;;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 23vw;
+      // background-color: #58C4C3;
+      margin: 20px;
+      height: 42vh;
+      border-radius: 60px;
+      box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
+      background-color: #ffe7af;
+      border: 5px solid white;
+      // padding: 50px;;
 
-            > .pic1 {
-                background-image: url("../Assets/money.png");
-                width: 15vw;
-                height: 25vh;
-                background-size:contain;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                // padding: 10px;
-                margin-top: 0px;
-                margin-bottom: 10px;
-            }
-            > .pic2 {
-                background-image: url("../Assets/scholarship.png");
-                width: 15vw;
-                height: 25vh;
-                background-size: contain;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                // padding: 10px;
-                margin-top: 0px;
-                margin-bottom: 10px;
-            }
-            > h5{
-                font-size: 27px;
-                font-family: 'Raleway', sans-serif; 
-                margin-top : 10px;
-                // paddi
-                
-            }
-
+      > .pic1 {
+        background-image: url("../Assets/money.png");
+        width: 15vw;
+        height: 25vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        // padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+      > .pic2 {
+        background-image: url("../Assets/scholarship.png");
+        width: 15vw;
+        height: 25vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        // padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+      > h5 {
+        font-size: 27px;
+        font-family: "Raleway", sans-serif;
+        margin-top: 10px;
+        // paddi
+      }
     }
 
-    > div:hover{
+    > div:hover {
+      animation: imgUp 0.2s linear 2 alternate;
 
-        animation: imgUp 0.2s linear 2 alternate;
-
-        @keyframes imgUp {
-            to {
-                transform: translateY(  -10px );
-            }
+      @keyframes imgUp {
+        to {
+          transform: translateY(-10px);
         }
+      }
     }
-
-    }
+  }
 }
-
 
 @keyframes imgUp {
-    to {
-        transform: translateY( - 10px );
-    }
+  to {
+    transform: translateY(-10px);
+  }
 }
 
-
 .home4 {
-    width: 100%;
-    height : 100vh ;
-    background-color: white;
-    padding: 500px 0 ;
-    display: flex;
-    align-items:center;
-    justify-content:right;
-    margin-top: -400px ;
-    // background-image: url("../Assets/3.jpeg");
-    // filter: blur(2px);
-    // background-size: cover;
-    z-index: -1;
+  width: 100%;
+  height: 100vh;
+  // background-color: white;
+  padding: 500px 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: -400px;
+  // background-image: url("../Assets/3.jpeg");
+  // filter: blur(2px);
+  // background-size: cover;
+  z-index: -1;
 
-   > .sidenote{
+  > .sidenote {
     color: red;
     padding: 111px;
     font-size: 75px;
-    margin-bottom: 190px ;
-    font-family: 'Raleway', sans-serif;
+    margin-bottom: 190px;
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
-    color: black;
-   }   
+    color: white;
+  }
 
-   > .box {
-
+  > .box {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70vw;
     // background-color: #FFE7AF;
-    background-color: #0BCEDE;
-    box-shadow:  0px 0px 40px rgba($color: #000000, $alpha: 0.5);
-    margin-top: -200px ;
+    // background-color: #0BCEDE;
+    box-shadow: 0px 0px 40px rgba($color: #000000, $alpha: 0.5);
+    margin-top: -200px;
     height: 50vh;
-    border-radius: 67px 0 0 67px  ;
+    border-radius: 67px 0 0 67px;
     z-index: 1;
     // border-style: none;
     padding: 10px;
-    border: 5px solid black;
+    // border: 5px solid white;
     border-right: none;
-    background-color: #EF314C;
+    // background-color: #EF314C;
 
     // > img {
     //     width: 30%;
@@ -435,146 +420,136 @@
     //     // backdrop-filter: blur(2px);
 
     //     > p {
-    //         color : black;
+    //         color : white;
     //         letter-spacing: 2px ;
     //         word-spacing: 5px ;
     //         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     //     }
-  //    }
+    //    }
 
     > div {
-        display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            width: 23vw;;
-            // background-color: #58C4C3;
-            margin: 20px ;
-            height: 42vh;
-            border-radius: 60px;
-            box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
-            background-color: #FFE7AF;
-            // padding: 50px;;
-            border: 5px solid black;
-           
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 23vw;
+      // background-color: #58C4C3;
+      margin: 20px;
+      height: 42vh;
+      border-radius: 60px;
+      box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
+      // background-color: #FFE7AF;
+      // padding: 50px;;
+      // border: 5px solid white;
 
-            > .pic1 {
-                background-image: url("../Assets/ccs_logo.png");
-                width: 15vw;
-                height: 25vh;
-                background-size:contain;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                // padding: 10px;
-                margin-top: 40px;
-                margin-bottom: 0px;
-                // padding-bottom: ;
+      > .pic1 {
+        background-image: url("../Assets/ccs_logo.png");
+        width: 15vw;
+        height: 25vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        // padding: 10px;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        // padding-bottom: ;
+      }
+      > .pic2 {
+        background-image: url("../Assets/taas_logo.png");
+        width: 15vw;
+        height: 29vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        // padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+      > h5 {
+        font-size: 20px;
+        font-family: "Raleway", sans-serif;
+        text-align: center;
+        // animation: typing 3s steps(40) 1s infinite;
+
+        > a {
+          @keyframes typing {
+            from {
+              width: 0;
             }
-            > .pic2 {
-                background-image: url("../Assets/taas_logo.png");
-                width: 15vw;
-                height: 29vh;
-                background-size: cover;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                // padding: 10px;
-                margin-top: 0px;
-                margin-bottom: 10px;
-            }
-            > h5{
-                font-size: 20px;
-                font-family: 'Raleway', sans-serif; 
-                text-align: center;
-                // animation: typing 3s steps(40) 1s infinite;
-
-                > a {
-                    
-                    @keyframes typing {
-                        from {
-                            width: 0;
-                          }
-                          to {
-                            width: 100%;
-                          }
-                    }
-
-                    font-size: 22px;
-                    font-family: 'Raleway' , sans-serif;
-                    text-align: right;
-
-                }
-
-            }
-
-    }
-
-    > div:hover{
-
-        animation: imgUp 0.2s linear 2 alternate;
-
-        @keyframes imgUp {
             to {
-                transform: translateY(  -10px );
+              width: 100%;
             }
+          }
+
+          font-size: 22px;
+          font-family: "Raleway", sans-serif;
+          text-align: right;
         }
+      }
     }
 
+    > div:hover {
+      animation: imgUp 0.2s linear 2 alternate;
+
+      @keyframes imgUp {
+        to {
+          transform: translateY(-10px);
+        }
+      }
     }
+  }
 }
 
-
 @keyframes imgUp {
-    to {
-        transform: translateY( - 10px );
-    }
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 .home5 {
-    width: 100%;
-    height : 100vh ;
-    background-color: white;
-    padding: 500px 0 ;
-    display: flex;
-    align-items:center;
-    justify-content:left;
-    margin-top: -400px ;
-    // background-image: url("../Assets/3.jpeg");
-    // filter: blur(2px);
-    // background-size: cover;
-    z-index: -1;
+  width: 100%;
+  height: 100vh;
+  // background-color: white;
+  padding: 500px 0;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-top: -400px;
+  // background-image: url("../Assets/3.jpeg");
+  // filter: blur(2px);
+  // background-size: cover;
+  z-index: -1;
 
-   > .sidenote{
+  > .sidenote {
     color: red;
     padding: 111px;
     font-size: 75px;
-    margin-bottom: 190px ;
-    font-family: 'Raleway', sans-serif;
+    margin-bottom: 190px;
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
-    color: black;
+    color: white;
     // margin-right: 20px;
     margin-left: -45px;
     text-align: center;
     padding-right: 0px;
-           
-   }
+  }
 
-   > .box {
-
+  > .box {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70vw;
     // background-color: #FFE7AF;
-    background-color: #34EB8F;
-    box-shadow:  0px 0px 40px rgba($color: #000000, $alpha: 0.5);
-    margin-top: -200px ;
+    // background-color: #34EB8F;
+    box-shadow: 0px 0px 40px rgba($color: #000000, $alpha: 0.5);
+    margin-top: -200px;
     height: 50vh;
-    border-radius: 0 67px 67px 0  ;
+    border-radius: 0 67px 67px 0;
     z-index: 1;
     // border-style: none;
     padding: 0px;
-    border: 5px solid black;
+    // border: 5px solid white;
     border-left: none;
 
     // > img {
@@ -593,151 +568,246 @@
     //     // backdrop-filter: blur(2px);
 
     //     > p {
-    //         color : black;
+    //         color : white;
     //         letter-spacing: 2px ;
     //         word-spacing: 5px ;
     //         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     //     }
-  //    }
+    //    }
 
     > div {
-        display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            width: 23vw;;
-            // background-color: #58C4C3;
-            margin: 20px ;
-            height: 42vh;
-            border-radius: 60px;
-            box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
-            background-color: #FFE7AF;
-            border: 5px solid black;
-            // padding: 50px;;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      width: 23vw;
+      // background-color: #58C4C3;
+      margin: 20px;
+      height: 42vh;
+      border-radius: 60px;
+      box-shadow: 0px 5px 40px rgba($color: #000000, $alpha: 0.4);
+      background-color: #ffe7af;
+      border: 5px solid white;
+      // padding: 50px;;
 
-            > .pic1 {
-                background-image: url("../Assets/MIcrodoft.png");
-                width: 15vw;
-                height: 25vh;
-                background-size:contain;
-                background-repeat: no-repeat;
-                background-position: center;
-                // border-radius: 0px;
-                // padding: 10px;
-                margin-top: 0px;
-                // margin-bottom: 5px;
-                background-size: 70%;
-            }
-            > .pic2 {
-                background-image: url("../Assets/google.png");
-                width: 15vw;
-                height: 25vh;
-                background-size: contain;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                // padding: 10px;
-                margin-top: 0px;
-                margin-bottom: 0px;
-                background-position: center;
-                background-size: 70%;
-            }
-            > .pic3 {
-                background-image: url("../Assets/CODENINJAS.png");
-                width: 15vw;
-                height: 26vh;
-                background-size:cover;
-                background-repeat: no-repeat;
-                border-radius: 10px;
-                // padding: 10px;
-                margin-top: 0px;
-                margin-bottom: 20px;
-            }
-            > h5{
-                font-size: 27px;
-                font-family: 'Raleway', sans-serif; 
-                margin-top : 10px;
-                text-align: center;
-                // paddi
-            }
-
+      > .pic1 {
+        background-image: url("../Assets/MIcrodoft.png");
+        width: 15vw;
+        height: 25vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        // border-radius: 0px;
+        // padding: 10px;
+        margin-top: 0px;
+        // margin-bottom: 5px;
+        background-size: 70%;
+      }
+      > .pic2 {
+        background-image: url("../Assets/google.png");
+        width: 15vw;
+        height: 25vh;
+        background-size: contain;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        // padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-position: center;
+        background-size: 70%;
+      }
+      > .pic3 {
+        background-image: url("../Assets/CODENINJAS.png");
+        width: 15vw;
+        height: 26vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        // padding: 10px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+      }
+      > h5 {
+        font-size: 27px;
+        font-family: "Raleway", sans-serif;
+        margin-top: 10px;
+        text-align: center;
+        // paddi
+      }
     }
 
-    > div:hover{
+    > div:hover {
+      animation: imgUp 0.2s linear 2 alternate;
 
-        animation: imgUp 0.2s linear 2 alternate;
-
-        @keyframes imgUp {
-            to {
-                transform: translateY(  -10px );
-            }
+      @keyframes imgUp {
+        to {
+          transform: translateY(-10px);
         }
+      }
     }
-
-    }
+  }
 }
 
-
 @keyframes imgUp {
-    to {
-        transform: translateY( - 10px );
-    }
+  to {
+    transform: translateY(-10px);
+  }
 }
 
 .home6 {
-    width: 100%;
-    height : 70vh ;
-    background-color: white;
-    padding: 500px 0 ;
-    display: flex;
-    align-items:center;
-    justify-content:right;
-    margin-top: -400px ;
-    // background-image: url("../Assets/3.jpeg");
-    // filter: blur(2px);
-    // background-size: cover;
-    z-index: -1;
-    padding-bottom: 201px;
+  width: 100%;
+  height: 70vh;
+  // background-color: white;
+  padding: 500px 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-top: -400px;
+  // background-image: url("../Assets/3.jpeg");
+  // filter: blur(2px);
+  // background-size: cover;
+  z-index: -1;
+  padding-bottom: 201px;
 
-   > .sidenote{
-    color: red;
+  > .sidenote {
+    color: white;
     padding: 111px;
     font-size: 75px;
-    margin-bottom: 190px ;
-    font-family: 'Raleway', sans-serif;
+    margin-bottom: 190px;
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
-    color: black;
+    color: white;
     // padding-right: 0px;
     text-align: center;
-   }   
+  }
 
-   > .box {
-
+  > .box {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 70vw;
-    background-color: #0BCEDE;
-    box-shadow:  0px 0px 40px rgba($color: #000000, $alpha: 0.5);
-    margin-top: -200px ;
+    // background-color: #0BCEDE;
+    box-shadow: 0px 0px 40px rgba($color: #000000, $alpha: 0.5);
+    margin-top: -200px;
     height: 50vh;
-    border-radius: 67px 0 0 67px  ;
+    border-radius: 67px 0 0 67px;
     z-index: 1;
     // border-style: none;
     padding: 10px;
-    border: 5px solid black;
+    // border: 5px solid white;
     border-right: none;
-    background-color: #EF314C;
+    // background-color: #EF314C;
 
     > p {
-        font-family: 'Raleway', sans-serif;
-        margin: 10px;
-        letter-spacing: 1px;
-        word-spacing: 5px;
-        font-size:20px;
-        font-weight: bold;
-        text-align: center;
+      font-family: "Raleway", sans-serif;
+      margin: 10px;
+      letter-spacing: 1px;
+      word-spacing: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      color: #ffe7af;
     }
+  }
+}
+.scroll {
+  height: 100vh; 
+  //   background-image: url('../Assets/94b09381881491.5d0c8dfda928a.jpg');
+  background-image: url("../Assets/background_home.webp");
+  background-size: cover; /* Adjust the background size as per your requirements */
+  overflow-y: scroll; 
+  //   background-blend-mode: ;
+  overflow: auto;
+}
+.scroll::-webkit-scrollbar {
+    width: 1px; /* Set the width of the scrollbar */
+  }
+  
+  .scroll::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the color of the thumb */
+  }
+  
+  .scroll::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the color of the track */
+  }
+.home2 {
+  .sidenote {
+    a {
+      color: white; /* Set your desired color here */
+    }
+  }
+  .box {
+    .note1,
+    .note2,
+    .note3 {
+      h5 {
+        a {
+          color: #ffe7af; // Set your desired color here
+        }
+      }
+    }
+  }
+}
+.home3 {
+  .sidenote {
+    a {
+      color: white;
+    }
+  }
+  // COlor not changing
 
+  .box {
+    .note1 {
+      .pic1 {
+        h5 {
+          a {
+            color: white;
+          }
+        }
+      }
     }
+  }
+}
+.home4 {
+  .sidenote {
+    a {
+      color: white;
+    }
+  }
+}
+.home5 {
+  .sidenote {
+    a {
+      color: white;
+    }
+  }
+  .box {
+    .note1 {
+      .pic1 {
+        h5 {
+          a {
+            color: white; // Set your desired color here
+          }
+        }
+      }
+    }
+  }
+}
+.home6 {
+  .sidenote {
+    a {
+      color: white;
+    }
+  }
+}
+.home4 {
+  .box {
+    .note1,
+    .note2 {
+      h5 a {
+        color: #ffe7af; // Set your desired color here
+      }
+    }
+  }
 }
