@@ -180,7 +180,6 @@
 
     > div:hover {
       animation: imgUp 0.2s linear 2 alternate;
-
       @keyframes imgUp {
         to {
           transform: translateY(-10px);
