@@ -99,6 +99,7 @@ const Other = () => {
                                             <option value="6">C</option>
                                             <option value="5">C-</option>
                                             <option value="0">F</option>
+                                            {/* Anush */}
                                         </select>
                                     </td>
                                 </tr>
