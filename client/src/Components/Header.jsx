@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from "react-router-dom"
-import {HashLink} from "react-router-hash-link"
+import React from "react";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
   return (
@@ -17,9 +17,9 @@ const Header = () => {
           <Link to = {'/other'}>Others</Link>
         </main>
     </nav>
-  )
-}
+  );
+};
 
-//! to create all the paths and all the Create new lining tags you must ensure about the routing in the app.js unless there is no benefit of doing anything by just putting the LINK tag and then giving a link the link tag will only work if the new component's address is in one of the ROUTES 
+//! to create all the paths and all the Create new lining tags you must ensure about the routing in the app.js unless there is no benefit of doing anything by just putting the LINK tag and then giving a link the link tag will only work if the new component's address is in one of the ROUTES
 
-export default Header
+export default Header;
