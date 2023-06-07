@@ -5,17 +5,16 @@ import { HashLink } from "react-router-hash-link";
 const Header = () => {
   return (
     <nav>
-        <h1>MyHerupa2</h1>
-        <main>
-          <HashLink to = {"/#home"}>Home</HashLink>  
-          <HashLink to = {"/#notes"}>Notes</HashLink>
-          <HashLink to = {"/#finance"}>Financial Assitance</HashLink>
-          <HashLink to = {"/#societies"}>Societies</HashLink>
-          <HashLink to = {"/#events"}>Events</HashLink>
-          <HashLink to = {"/#aboutus"}>About us</HashLink>
-          {/* HashLink sirf wo hi pages karne hain jo scroll kar ke access kiye ja sakte hain and jinke liye alag se page bnana hai unke liye sirf link */}
-          <Link to = {'/other'}>Others</Link>
-        </main>
+      <h1>MyHerupa2</h1>
+      <main>
+        <HashLink to={"/#home"}>Home</HashLink>
+        <HashLink to={"/#notes"}>Notes</HashLink>
+        <HashLink to={"/#finance"}>Financial Assitance</HashLink>
+        <HashLink to={"/#societies"}>Societies</HashLink>
+        <HashLink to={"/#events"}>Events</HashLink>
+        <HashLink to={"/#aboutus"}>About us</HashLink>
+        {/* HashLink sirf wo hi pages karne hain jo scroll kar ke access kiye ja sakte hain and jinke liye alag se page bnana hai unke liye sirf link */}
+      </main>
     </nav>
   );
 };
