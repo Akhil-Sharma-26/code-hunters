@@ -1,6 +1,6 @@
 footer {
   // background-color: rgba($color: #ffffff, $alpha: 0.3);
-  background-image: url("../Assets/94b09381881491.5d0c8dfda928a.jpg");
+  // background-image: url("../Assets/94b09381881491.5d0c8dfda928a.jpg");
   background-position: center;
   background-repeat: no-repeat;
   overflow-x: auto;
@@ -19,12 +19,12 @@ footer {
   border-radius: 50px 0 0 50px;
   // backgroud-opacity: 0.4;
   // position: relative;
-  bac > div {
+  > div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 11px;
+    // padding: 20px;
 
     > div {
       padding: 10px;
