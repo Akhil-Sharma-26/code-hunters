@@ -330,6 +330,9 @@ const Other = () => {
         <div className="academic-calendar">
             <a href="">Academic Calender</a>
         </div>
+        <div className="academic-calendar-2">
+            <a href="https://www.thapar.edu/upload/files/Holiday%20List.pdf">Holiday Calender</a>
+        </div>
     </div>
   )
 }
