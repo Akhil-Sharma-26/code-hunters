@@ -4,7 +4,7 @@ import React from 'react'
 const Selector = ( props ) => {
   return (
     <>
-        <div className="body2">
+        <div className= {"body2 " + props.a1}>
             <h3 cid="name">{props.name}</h3>
         </div>
     </>

@@ -26,9 +26,16 @@ nav{
         justify-content: flex-end;
 
         > a {
-            margin : 10px ;
-            color: rebeccapurple;
-            font-size: 25px;
+            margin : 20px ;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            font-weight: 500;
+
+            transition-duration: .3s;
+        }
+
+        > a:hover{
+            color: #cd2a41;
         }
     }
 

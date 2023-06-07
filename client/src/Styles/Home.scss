@@ -38,6 +38,40 @@
             // margin-bottom: 70vh;
         }
 
+        > button {
+            width: 200px;
+            height: 50px;
+            margin-top: 10px;
+            border-radius: 30px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 17px;
+
+            border: 2px solid black;
+            background-color: transparent;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        
+        > div{
+            
+            margin-top: 40px;
+            
+            > button {
+                border-radius: 30px;
+                margin-left: 10px;
+                width: 150px;
+                height: 50px;
+                font-family: 'Raleway', sans-serif;
+                font-size: 17px;
+
+                border: 2px solid black;
+                background-color: transparent;
+                font-weight: 600;
+                cursor: pointer;
+            }
+
+        }
+
     }
 
     &::before{ 

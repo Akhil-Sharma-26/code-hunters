@@ -7,8 +7,8 @@ const FYear = () => {
         'Bio-technology',
         'Pool A',
         'Pool B',
-        'CSE Branch',
-        'COBS Branch'
+        'CSE',
+        'COBS'
     ]
   return (
     <div className="body1">

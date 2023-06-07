@@ -21,6 +21,7 @@ import "./Styles/FYear.scss";
 import "./Styles/Card.scss";
 import "./Styles/Selector.scss";
 import SYear from "./Components/SYear";
+import CGcalc from "./Components/CGcalc";
 import TYear from "./Components/TYear";
 import "./Styles/SYear.scss";
 import Banks from "./Components/Banks";
@@ -42,6 +43,8 @@ const App = () => {
         <Route path="/secondyear" element={<SYear />} />
         <Route path="/thirdyear" element={<TYear />} />
         <Route path="/banks" element={<Banks />} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/cgpa" element={<CGcalc/>} />
       </Routes>
       <Footer />
     </Router>

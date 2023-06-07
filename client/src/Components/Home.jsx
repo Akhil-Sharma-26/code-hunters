@@ -16,12 +16,21 @@ const Home = () => {
 
   return (
     <>
+
+
     <div className='home' id='home'>
         <main>
-          <h1>MyHerupa 2</h1>
-          <p>Your one stop solution to all college needs</p>
+           <h1>MyHerupa 2</h1>
+           <p>Your one stop solution to all college needs</p>
+            <div>
+               <button>Login</button>
+               <button style={{backgroundColor : "#EF314C", color: "White"}}>Register</button>
+            </div>
+               <button>CGPA Calculator</button>
         </main>
     </div>
+
+
       <div className="home2" id="notes">
         <div className='sidenote'>
         <Link to={"/firstyear"}>Notes</Link>
