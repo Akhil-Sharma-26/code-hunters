@@ -51,7 +51,11 @@ const Home = () => {
               <Link to={"/societies"}>Societies</Link>
               
         </div>
-        <div className='box'>
+        <div className="home4" id="societies">
+          <div className="sidenote" title="Click here to view more">
+            <Link to={"/societies"}>Societies</Link>
+          </div>
+          <div className="box">
             <div className="note1">
                   <div className="pic1"></div>
                   <h5>

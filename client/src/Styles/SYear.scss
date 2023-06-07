@@ -1,0 +1,29 @@
+.bodySecondYear {
+  background-image: url('');
+  background-color: white;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 78vh;
+  width: 100%;
+  // margin: 20px ;
+  padding-top: 100px;
+
+  > .select {
+    font-family: "Raleway", sans-serif;
+    color: white;
+  }
+
+  > .Cards {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    max-width: 70 vw;
+    max-width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

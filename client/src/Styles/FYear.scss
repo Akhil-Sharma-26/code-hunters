@@ -1,0 +1,26 @@
+.body1 {
+  background-image: url('../Assets/background_home.webp');
+  background-size: cover;
+  // background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 78vh;
+  width: 100%;
+  // margin: 20px ;
+  // padding: 20px
+
+  > .select {
+    font-family: "Raleway", sans-serif;
+    color: white;
+  }
+
+  > .Cards {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    max-width: 70 vw;
+    margin-top: 10vh;
+  }
+}
