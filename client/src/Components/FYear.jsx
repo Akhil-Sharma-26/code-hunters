@@ -1,5 +1,5 @@
-import React, {useState} from 'react'
-import Selector from './Selector'
+import React, { useState } from "react";
+import Selector from "./Selector";
 
 const FYear = () => {
 
@@ -12,17 +12,14 @@ const FYear = () => {
     ]
   return (
     <div className="body1">
-        <h1 className="select">Select Your Branch/Pool</h1>
-        <div className="Cards">
-            {
-                subjectarray.map( (i) => (
-                    <Selector name={i}/>
-
-                ))
-            }
-        </div>
+      <h1 className="select">Select Your Branch/Pool</h1>
+      <div className="Cards">
+        {subjectarray.map((i) => (
+          <Selector name={i} />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default FYear
+export default FYear;

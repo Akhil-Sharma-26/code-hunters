@@ -1,14 +1,14 @@
-import React from 'react'
+import React from "react";
 // import "../Styles/Selector.scss"
 
-const Selector = ( props ) => {
+const Selector = (props) => {
   return (
     <>
         <div className= {"body2 " + props.a1}>
             <h3 cid="name">{props.name}</h3>
         </div>
     </>
-  )
-}
+  );
+};
 
-export default Selector
+export default Selector;

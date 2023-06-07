@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .home{
-
-    // background-color: #2980b9;
+    
     width: 100%;
     height : 100vh;
     border : null;
@@ -103,7 +102,6 @@
     // background-image: url("../Assets/3.jpeg");
     // filter: blur(2px);
     // background-size: cover;
-    z-index: -1;
 
    > .sidenote{
     color: red;
@@ -156,14 +154,14 @@
     //         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     //     }
   //    }
-
+    >.link{
     > div {
         display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 20px;
-            width: 23vw;;
+            // padding: 20px;
+            width: 20vw;;
             // background-color: #58C4C3;
             margin: 20px ;
             height: 42vh;
@@ -172,7 +170,6 @@
             background-color: #FFE7AF;
             border: 5px solid black;
             // padding: 50px;;
-
             > .pic1 {
                 background-image: url("../Assets/notes.png");
                 width: 15vw;
@@ -213,7 +210,8 @@
             }
 
     }
-
+}
+    >.link{
     > div:hover{
 
         animation: imgUp 0.2s linear 2 alternate;
@@ -223,7 +221,7 @@
                 transform: translateY(  -10px );
             }
         }
-    }
+    }}
 
     }
 }

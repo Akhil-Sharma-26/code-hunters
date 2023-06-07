@@ -4,16 +4,6 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-d
 
 const Home = () => {
 
-      const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  const handleLogin = (user) => {
-    // Perform necessary login validation, e.g., with your backend server
-    // ...
-
-    // Simulate successful login
-    setIsLoggedIn(true);
-  };
-
   return (
     <>
 
@@ -36,18 +26,26 @@ const Home = () => {
         <Link to={"/firstyear"}>Notes</Link>
         </div>
         <div className='box'>
-            <div className="note1">
-                  <div className="pic1"></div>
-                  <h5><Link to={"/firstyear"}>First Year</Link></h5>
-            </div>
-            <div className="note2">
-                  <div className="pic2"></div>
-                  <h5><Link to={"/secondyear"}>Second Year</Link></h5></div>
-            <div className="note3">
-                  <div className="pic3">
+            <Link to={'/firstyear'} className='link'>
+                  <div className="note1">
+                        <div className="pic1"></div>
+                        <h5><Link to={'/firstyear'}>FirstYear</Link></h5>
                   </div>
-                  <h5><Link to={"/thirdyear"}>Third Year</Link></h5></div>
+            </Link>
+            <Link to={"/secondyear"} className='link'>
+                  <div className="note2">
+                        <div className="pic2"></div>
+                        <h5><Link to={"/secondyear"} className='link'>Second Year</Link></h5>
+                  </div>
+           </Link>
+           <Link to={"/thirdyear"} className='link'>
+                  <div className="note3">
+                        <div className="pic3"></div>
+                        <h5><Link to={"/thirdyear"} className='link'>Third Year</Link></h5>
+                  </div>
+            </Link>
             </div>
+            
       </div>
     <div className="home3" id="finance">
         <div className='box'>
@@ -57,7 +55,7 @@ const Home = () => {
             </div>
             <div className="note2">
                   <div className="pic2"></div>
-                  <h5>Scholarships</h5></div>
+                  <h5><a href="https://thapar.edu/upload/files/SCHOLARSHIP%20POLICY%202023-24.pdf">Scholarships</a></h5></div>
         </div>
         <div className='sidenote'>
         <Link to={"/finance"}>Financial<br/>Assistance</Link>
