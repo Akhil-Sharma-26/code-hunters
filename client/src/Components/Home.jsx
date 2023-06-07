@@ -13,10 +13,10 @@ const Home = () => {
            <h1>MyHerupa 2</h1>
            <p>Your one stop solution to all college needs</p>
             <div>
-               <button>Login</button>
-               <button style={{backgroundColor : "#EF314C", color: "White"}}>Register</button>
+               <button> <a href="/login">Login</a> </button>
+               {/* <button style={{backgroundColor : "#EF314C", color: "White"}}>Register</button> */}
             </div>
-               <button>CGPA Calculator</button>
+               <button> <a href="/cgpa">CGPA Calculator</a></button>
         </main>
     </div>
 

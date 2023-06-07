@@ -7,6 +7,7 @@ import {
   Navigate,
 } from "react-router-dom";
 import Header from "./Components/Header";
+import CGcalc from "./Components/CGcalc";
 import "./Styles/App.scss";
 import "./Styles/Header.scss";
 import Home from "./Components/Home.jsx";
@@ -21,12 +22,13 @@ import "./Styles/FYear.scss";
 import "./Styles/Card.scss";
 import "./Styles/Selector.scss";
 import SYear from "./Components/SYear";
-import CGcalc from "./Components/CGcalc";
 import TYear from "./Components/TYear";
 import "./Styles/SYear.scss";
 import Banks from "./Components/Banks";
 import "./Styles/Banks.scss";
 import "./Styles/BankCard.scss";
+import Other from "./Components/Other";
+import "./Styles/Other.scss";
 
 const App = () => {
   return (
@@ -43,8 +45,9 @@ const App = () => {
         <Route path="/secondyear" element={<SYear />} />
         <Route path="/thirdyear" element={<TYear />} />
         <Route path="/banks" element={<Banks />} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/cgpa" element={<CGcalc/>} />
+        <Route path="/cgpa" element={<CGcalc />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/other" element={<Other />} />
       </Routes>
       <Footer />
     </Router>
