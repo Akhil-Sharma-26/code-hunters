@@ -4,20 +4,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 78vh;
+  // height: 90vh;
   width: 100%;
-  // margin: 20px ;
+  margin: 20px ;
+  padding-top: 100px;
   // padding: 20px
 
   > .select {
     font-family: "Raleway", sans-serif;
+    // position: fixed;
+    // margin: 30px;
   }
 
   > .Cards {
+    // position: fixed;
     display: flex;
-    flex-direction: row;
-    margin: 10px;
+    flex-direction: column;
+    // margin: 10px;
     max-width: 70 vw;
-    margin-top: 10vh;
+    margin-top: 8vh;
+    // z-index: 2;
   }
 }

@@ -29,6 +29,7 @@ import "./Styles/Banks.scss";
 import "./Styles/BankCard.scss";
 import Other from "./Components/Other";
 import "./Styles/Other.scss";
+import "./Styles/Selector_2.scss";
 
 const App = () => {
   return (
