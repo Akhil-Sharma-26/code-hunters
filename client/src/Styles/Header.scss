@@ -23,8 +23,27 @@ nav {
     display: flex;
     justify-content: flex-end;
 
+        > .isLoggedIn{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          > .icon{
+            background-image: url('../Assets/profile.png');
+            background-size: cover;
+            height: 50%;
+            width: 33px;
+            margin-right: 10px;
+            // background-color: aqua;
+          }
+          > .name{
+            margin: 20px 0px;
+            font-size: 20px;
+            font-weight: 500;
+            margin-right: 10px;
+          }
+        }
         > a {
-            margin : 20px ;
+            margin : 20px 10px;
             color: rgb(0, 0, 0);
             font-size: 20px;
             font-weight: 500;

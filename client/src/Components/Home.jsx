@@ -12,11 +12,13 @@ const Home = () => {
         <main>
            <h1>MyHerupa 2</h1>
            <p>Your one stop solution to all college needs</p>
-            <div>
-               <button> <a href="/login">Login</a> </button>
+            <div> 
+                  <a href="/login">
+                        <button>Login</button>
+                  </a> 
                {/* <button style={{backgroundColor : "#EF314C", color: "White"}}>Register</button> */}
             </div>
-               <button> <a href="/cgpa">CGPA Calculator</a></button>
+            <a href="/cgpa"><button>CGPA Calculator</button></a>
         </main>
     </div>
 

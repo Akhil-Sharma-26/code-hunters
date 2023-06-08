@@ -7,6 +7,10 @@ const Header = () => {
     <nav>
         <h1>MyHerupa2</h1>
         <main>
+          <div className="isLoggedIn">
+            <div className="icon"></div>
+            <div className="name">Hi, Anush</div>
+          </div>
           <HashLink to = {"/#home"}>Home</HashLink>  
           <HashLink to = {"/#notes"}>Notes</HashLink>
           <HashLink to = {"/#finance"}>Finance</HashLink>
