@@ -57,7 +57,7 @@ const Home = () => {
             </div>
             <div className="note2">
                   <div className="pic2"></div>
-                  <h5><a href="https://thapar.edu/upload/files/SCHOLARSHIP%20POLICY%202023-24.pdf">Scholarships</a></h5></div>
+                  <h5><a href="https://thapar.edu/upload/files/SCHOLARSHIP%20POLICY%202023-24.pdf" target='blank'>Scholarships</a></h5></div>
         </div>
         <div className='sidenote'>
         <Link to={"/finance"}>Financial<br/>Assistance</Link>

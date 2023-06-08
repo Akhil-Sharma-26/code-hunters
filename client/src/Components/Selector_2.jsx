@@ -16,11 +16,11 @@ const Selector_2 = (props) => {
     {
       showMore && (
         <div className="body_main_s2">
-          <h3>Course Site</h3>
-          <h3>Syllabus</h3>
-          <h3>Lab File</h3>
-          <h3>Projects</h3>
-          <h3>Notes</h3>
+          <h3>Subject 1</h3>
+          <h3>Subject 2</h3>
+          <h3>Subject 3</h3>
+          <h3>Subject 4</h3>
+          <h3>Subject 5</h3>
         </div>
       )
     }
