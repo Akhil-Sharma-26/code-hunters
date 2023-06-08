@@ -14,7 +14,7 @@ const Societies = () => {
   const societies = [
     {
       id: 1,
-      name: "Creative Coding Society",
+      name: "Creative Computing Society",
       imgSrc: "./Assets/ccs_logo",
     },
     {
@@ -39,7 +39,7 @@ const Societies = () => {
     },
     {
       id: 6,
-      name: "OWasp",
+      name: "Owasp",
       imgSrc: "../Assets/taas_logo.png",
     },
     {
@@ -49,7 +49,7 @@ const Societies = () => {
     },
     {
       id: 8,
-      name: "Echos",
+      name: "Echoes",
       imgSrc: "../Assets/taas_logo.png",
     },
     {
