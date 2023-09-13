@@ -12,13 +12,13 @@ const Home = () => {
         <main>
            <h1>MyHerupa 2</h1>
            <p>Your one stop solution to all college needs</p>
-            <div> 
-                  <a href="/login">
-                        <button>Login</button>
-                  </a> 
-               {/* <button style={{backgroundColor : "#EF314C", color: "White"}}>Register</button> */}
+            <div>
+               <button>Login</button>
+               <button style={{backgroundColor : "#EF314C", color: "White"}}>Register</button>
             </div>
-            <a href="/cgpa"><button>CGPA Calculator</button></a>
+            <a href="/cgpa">
+               <button>CGPA Calculator</button>
+               </a>
         </main>
     </div>
 
@@ -57,7 +57,7 @@ const Home = () => {
             </div>
             <div className="note2">
                   <div className="pic2"></div>
-                  <h5><a href="https://thapar.edu/upload/files/SCHOLARSHIP%20POLICY%202023-24.pdf" target='blank'>Scholarships</a></h5></div>
+                  <h5><a href="https://thapar.edu/upload/files/SCHOLARSHIP%20POLICY%202023-24.pdf">Scholarships</a></h5></div>
         </div>
         <div className='sidenote'>
         <Link to={"/finance"}>Financial<br/>Assistance</Link>

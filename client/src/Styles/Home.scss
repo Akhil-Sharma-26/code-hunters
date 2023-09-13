@@ -4,7 +4,6 @@
     
     width: 100%;
     height : 100vh;
-    overflow: hidden;    
     border : null;
     border-radius: 0 0 200px 200px  ;
 
@@ -38,34 +37,38 @@
             // margin-bottom: 70vh;
         }
 
-        > a {
-            > button {
+        > button {
+            width: 200px;
+            height: 50px;
+            margin-top: 10px;
+            border-radius: 30px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 17px;
+
+            border: 2px solid black;
+            background-color: transparent;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        > a{
+            > button{
                 width: 200px;
-                height: 50px;
-                margin-top: 10px;
-                border-radius: 30px;
-                font-family: 'Raleway', sans-serif;
-                font-size: 17px;
-    
-                border: 2px solid black;
-                background-color: transparent;
-                font-weight: 600;
-                cursor: pointer;
-                background-color: rgb(232, 232, 232);
-                // box-shadow: 0 0 20px rgba($color: #000000, $alpha: 0.3);
-                transition: box-shadow, background-color 0.2s ease;
-            }
-            > button:hover{
-                background-color:greenyellow;
-                // box-shadow: 0 0 30px rgba($color: #000000, $alpha: 0.8);
+            height: 50px;
+            margin-top: 10px;
+            border-radius: 30px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 17px;
+
+            border: 2px solid black;
+            background-color: transparent;
+            font-weight: 600;
+            cursor: pointer;
             }
         }
-        
         > div{
             
             margin-top: 40px;
             
-           > a {
             > button {
                 border-radius: 30px;
                 margin-left: 10px;
@@ -78,13 +81,7 @@
                 background-color: transparent;
                 font-weight: 600;
                 cursor: pointer;
-                background-color: rgb(232, 232, 232);
             }
-            > button:hover{
-                background-color:greenyellow;
-                // box-shadow: 0 0 30px rgba($color: #000000, $alpha: 0.8);
-            }
-           }
 
         }
 
@@ -110,7 +107,6 @@
 .home2 {
     width: 100%;
     height : 100vh ;
-    overflow: hidden;
     background-color: white;
     padding: 500px 0 ;
     display: flex;
@@ -146,10 +142,9 @@
     border-radius: 67px 0 0 67px  ;
     z-index: 1;
     // border-style: none;
-    // padding: 20px;
+    padding: 10px;
     border: 5px solid black;
     border-right: none;
-    // overflow: hidden;
 
     // > img {
     //     width: 30%;
@@ -291,7 +286,6 @@
 .home3 {
     width: 100%;
     height : 100vh ;
-    overflow: hidden;
     background-color: white;
     padding: 500px 0 ;
     display: flex;
@@ -431,7 +425,6 @@
 .home4 {
     width: 100%;
     height : 100vh ;
-    overflow: hidden;
     background-color: white;
     padding: 500px 0 ;
     display: flex;
@@ -586,7 +579,6 @@
 .home5 {
     width: 100%;
     height : 100vh ;
-    overflow: hidden;
     background-color: white;
     padding: 500px 0 ;
     display: flex;
@@ -752,7 +744,6 @@
     // background-size: cover;
     z-index: -1;
     padding-bottom: 201px;
-    overflow: hidden;
 
    > .sidenote{
     color: red;
