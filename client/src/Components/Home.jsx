@@ -6,8 +6,6 @@ const Home = () => {
 
   return (
     <>
-
-
     <div className='home' id='home'>
         <main>
            <h1>MyHerupa 2</h1>
@@ -60,7 +58,7 @@ const Home = () => {
                   <h5><a href="https://thapar.edu/upload/files/SCHOLARSHIP%20POLICY%202023-24.pdf">Scholarships</a></h5></div>
         </div>
         <div className='sidenote'>
-        <Link to={"/finance"}>Financial<br/>Assistance</Link>
+        <Link to={"/finance"}>Financial Assistance</Link>
       
         </div>
       </div>

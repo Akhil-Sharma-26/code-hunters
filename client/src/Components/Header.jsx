@@ -20,6 +20,8 @@ const Header = () => {
           <Link to = {"/other"}>Others</Link>
           {/* HashLink sirf wo hi pages karne hain jo scroll kar ke access kiye ja sakte hain and jinke liye alag se page bnana hai unke liye sirf link */}
         </main>
+        <div id="img">
+        </div>
     </nav>
   );
 };
