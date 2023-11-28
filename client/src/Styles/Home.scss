@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 .home{
-    
+    margin-bottom: 30vh;
     width: 100%;
     height : 100vh;
     border : null;
@@ -105,10 +105,11 @@
 }
 
 .home2 {
+    margin-top: -30vh;
     width: 100%;
-    height : 100vh ;
+    // height : 0vh ;
     background-color: white;
-    padding: 500px 0 ;
+    padding: 220px 0 ;
     display: flex;
     align-items:center;
     justify-content:right;
@@ -284,10 +285,11 @@
 // }
 
 .home3 {
+    // margin-top: -vh;
     width: 100%;
-    height : 100vh ;
+    // height : 100vh ;
     background-color: white;
-    padding: 500px 0 ;
+    padding: 220px 0 ;
     display: flex;
     align-items:center;
     justify-content:left;
@@ -424,9 +426,9 @@
 
 .home4 {
     width: 100%;
-    height : 100vh ;
+    // height : 100vh ;
     background-color: white;
-    padding: 500px 0 ;
+    padding: 220px 0 ;
     display: flex;
     align-items:center;
     justify-content:right;
@@ -578,9 +580,9 @@
 
 .home5 {
     width: 100%;
-    height : 100vh ;
+    // height : 100vh ;
     background-color: white;
-    padding: 500px 0 ;
+    padding: 220px 0 ;
     display: flex;
     align-items:center;
     justify-content:left;
@@ -732,9 +734,9 @@
 
 .home6 {
     width: 100%;
-    height : 70vh ;
+    // height : 70vh ;
     background-color: white;
-    padding: 500px 0 ;
+    padding: 200px 0 ;
     display: flex;
     align-items:center;
     justify-content:right;
@@ -743,7 +745,7 @@
     // filter: blur(2px);
     // background-size: cover;
     z-index: -1;
-    padding-bottom: 201px;
+    padding-bottom: 01px;
 
    > .sidenote{
     color: red;
