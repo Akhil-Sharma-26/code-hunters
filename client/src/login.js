@@ -37,7 +37,13 @@ const Login = () => {
             required
           />
         </div>
-        <button type="submit"> <a href="/" style={{color: "white"}}> Login</a> </button>
+        <button type="submit">
+          {" "}
+          <a href="/" style={{ color: "white" }}>
+            {" "}
+            Login
+          </a>{" "}
+        </button>
       </form>
     </div>
   );
