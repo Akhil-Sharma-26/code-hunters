@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const TYear = () => {
-  return (
-    <div>TYear</div>
-  )
-}
+  return <div>TYear</div>;
+};
 
-export default TYear
+export default TYear;
