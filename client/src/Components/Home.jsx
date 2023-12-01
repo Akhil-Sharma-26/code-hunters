@@ -4,15 +4,20 @@ import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-d
 
 const Home = () => {
 
+      const [dd1, setdd1] = useState(true);
+      const toggle = () => {
+            setdd1(!dd1);
+      }
   return (
     <>
     <div className='home' id='home'>
         <main>
+            <div className="image"></div>
            <h1>MyHerupa 2</h1>
            <p>Your one stop solution to all college needs</p>
             <div>
                <button>Login</button>
-               <button style={{backgroundColor : "#EF314C", color: "White"}}>Register</button>
+               <button>Register</button>
             </div>
             <a href="/cgpa">
                <button>CGPA Calculator</button>
@@ -24,6 +29,14 @@ const Home = () => {
       <div className="home2" id="notes">
         <div className='sidenote'>
         <Link to={"/firstyear"}>Notes</Link>
+        </div>
+        <div className="sidenote_mobile">
+            <button onClick={toggle} className='notes'>Notes</button>
+            <div className={dd1 ? 'show' : 'hide'}>
+            <Link to={'/firstyear'}>FirstYear</Link>
+            <Link to={"/secondyear"} className='link'>Second Year</Link>
+            <Link to={"/thirdyear"} className='link'>Third Year</Link>
+            </div>
         </div>
         <div className='box'>
             <Link to={'/firstyear'} className='link'>
@@ -44,7 +57,7 @@ const Home = () => {
                         <h5><Link to={"/thirdyear"} className='link'>Third Year</Link></h5>
                   </div>
             </Link>
-            </div>
+        </div>
             
       </div>
     <div className="home3" id="finance">

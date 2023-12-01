@@ -86,6 +86,9 @@
             }
 
         }
+        >.image {
+            display: none;
+        }
 
     }
 
@@ -801,7 +804,77 @@
 
 
 @media (max-width: 500px){
-.home2{
+
+    *{
+        color: #083D77;
+    }
+
+    .home{
+        display: flex;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: white;
+        height: 40vh;
+        width: 100%;
+        >main{
+            width: 100%;
+            > h1{
+                position: relative;
+                // top: 30%;
+                text-align: left;
+                margin-left: 25px;
+            }
+            > p {
+                text-align: left;
+                margin-left: 25px;
+                position: relative;
+                // top: 30%;
+            }
+            > a {
+                position: relative;
+                // top: 30%;
+                display: flex;
+                // justify-content: ;
+                padding: 10px 25px;
+                > button {
+                    border: none;
+                    padding: 10px;
+                    background-color: #F4D35E;
+                    border-radius: 20px;
+                    font-size: 15px;
+                    border: 1px solid black;
+                }
+            }   
+            > div{
+                position: relative;
+                // top: 30%;
+                display: flex;
+                // justify-content: flex-end;
+                padding: 10px 15px 0px 22px ;
+                > button {
+                    border: none;
+                    padding: 10px;
+                    background-color: white;
+                    border-radius: 20px;
+                    font-size: 15px;
+                    background-color:#34ed90;
+                    margin: 0px 3px;
+                    border: 1px solid black;
+                }
+            }
+
+            >.image{
+                background-image: url("../Assets/graduation-cap.png");
+                width: 200px;
+                background-position: center;
+                background-size: contain;
+                aspect-ratio: 1/1;
+                right: -1%;
+            }
+        }
+    }
+    .home2{
     margin-top: 30px;
     display: flex;
     width: 100%;
@@ -809,18 +882,41 @@
     justify-content: center;
     align-items: center;
     // color: aquamarine !important;
+
+    >.sidenote{
+        display: none;
+    }
     
-    > .sidenote{
+    > .sidenote_mobile{
         font-size: 30px;
         width: 90%;
-        color: #1ac6ff;
-        padding: 0px 10px;
+        // color: #1ac6ff;
+        padding: 0px 0px;
         text-align: left;
         border-bottom: 2px solid black;
         margin-bottom: 10px;
+        >.notes{
+            padding:5px 0px;
+            width: 100%;
+            text-align: left;
+            font-family: "Raleway";
+            font-size: 27px;
+            background-color: white;
+            border: none;
+        }
+        > .show{
+            display: flex;
+            width: 95%;
+            font-size: large;
+            justify-content: space-between;
+            margin: 10px 0px;
+        }
+        > .hide{
+            display: none;
+        }
     }
     .box{
-        display: flex;
+        display: none;
         width: 90%;
         justify-content: space-between;
         padding: 10px 3px;
@@ -840,6 +936,21 @@
                     color: aqua;
                 }
             }
+        }
+    }
+    > .dropdown{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        > #Notes{
+            width: 90%;
+            // background-color: #34ed90;
+            height: 35px;
+            font-family: "Raleway";
+            font-size: 20px;
+            font-weight: 500;
+            border-radius:5px;
         }
     }
 }

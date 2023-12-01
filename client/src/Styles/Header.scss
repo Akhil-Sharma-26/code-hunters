@@ -78,18 +78,21 @@ nav{
   // background-color:aquamarine;
   // position: fixed;
   // margin-bottom: 30px;
-  background-color:#ffe780;
+  background-color:#EBEBD3;
   > h1 {
     font-family: "Raleway";
     // font-size: 20px;
   }
-}
-
-@media only screen and (max-width: 500px) {
-  main{
+  > main{
     display: none;
   }
 }
+
+// @media only screen and (max-width: 500px) {
+//   main{
+//     // display: none;
+//   }
+// }
 #img{
   // width: 0px;
   height: 24px;
