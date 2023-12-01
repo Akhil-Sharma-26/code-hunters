@@ -7,7 +7,7 @@ Our idea is to create a website which can assist a college student, not only by 
 2. Creating a system to notify registered students about the new upcoming events as well as other updates.
 
 ## Stack Used
-We used MERN to implement this website, frontend is fully based on React supported with SCSS for stylesheets, backend in this application is minimal which holds the details of users with their hashed passwords (using Bcrypt).
+We used MERN to implement this website, frontend is fully based on React supported with SCSS for stylesheets , backend in this application is minimal which holds the details of users with their hashed passwords (using Bcrypt).
 
 ## Team Contributions
 Anush Kapoor -- Frontend -- (Home Page, Finance, Notes, major styling part) </br>

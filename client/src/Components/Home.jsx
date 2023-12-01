@@ -3,13 +3,14 @@ import { Link } from "react-router-dom"
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 const Home = () => {
-
       const [dd1, setdd1] = useState(false);
       const [dd2, setdd2] = useState(false);
       const [dd3, setdd3] = useState(false);
       const [dd4, setdd4] = useState(false);
       const [dd5, setdd5] = useState(false);
       const toggle1 = () => {
+
+      const toggle = () => {
             setdd1(!dd1);
       }
       const toggle2 = () => {
@@ -173,5 +174,5 @@ const Home = () => {
     </>
   )
 }
-
+}
 export default Home
