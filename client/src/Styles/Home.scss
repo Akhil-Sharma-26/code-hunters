@@ -134,6 +134,10 @@
            
    }
 
+   > .sidenote_mobile{
+    display: none;
+   }
+
    > .box {
 
     display: flex;
@@ -815,7 +819,6 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-color: white;
-        height: 40vh;
         width: 100%;
         >main{
             width: 100%;

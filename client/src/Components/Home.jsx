@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 import { BrowserRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 
 const Home = () => {
+      const [dd1, setdd1] = useState(false);
 
-      const [dd1, setdd1] = useState(true);
       const toggle = () => {
             setdd1(!dd1);
       }
