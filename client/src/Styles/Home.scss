@@ -863,7 +863,7 @@
                     font-size: 15px;
                     background-color:#34ed90;
                     margin: 0px 3px;
-                    border: 1px solid black;
+                    border: 1px solid #083D77;
                 }
             }
 
@@ -885,6 +885,7 @@
     justify-content: center;
     align-items: center;
     // color: aquamarine !important;
+    // margin-bottom: -10px;
 
     >.sidenote{
         display: none;
@@ -959,20 +960,49 @@
 }
 .home3{
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     flex-direction: column-reverse;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     > .sidenote{
+        display: none;
         font-size: 30px;
         width: 90%;
         padding: 0px 10px;
         text-align: left;
         border-bottom: 2px solid black;
     }
+    > .sidenote_mobile{
+        font-size: 30px;
+        width: 90%;
+        // color: #1ac6ff;
+        padding: 0px 0px;
+        text-align: left;
+        border-bottom: 2px solid black;
+        margin-bottom: 10px;
+        >.finance{
+            padding:5px 0px;
+            width: 100%;
+            text-align: left;
+            font-family: "Raleway";
+            font-size: 27px;
+            background-color: white;
+            border: none;
+        }
+        > .show{
+            display: flex;
+            width: 95%;
+            font-size: large;
+            justify-content: space-between;
+            margin: 10px 0px;
+        }
+        > .hide{
+            display: none;
+        }
+    }
     > .box{
-        display: flex;
+        display: none;
         width: 90%;
         justify-content: space-between;
         padding: 19px 3px;
@@ -1004,15 +1034,48 @@
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    // margin-top: ;
+
     > .sidenote{
+        display: none;
         font-size: 30px;
         width: 90%;
         padding: 0px 10px;
         text-align: left;
         border-bottom: 2px solid black;
     }
+    > .sidenote_mobile{
+        font-size: 30px;
+        width: 90%;
+        // color: #1ac6ff;
+        padding: 0px 0px;
+        text-align: left;
+        border-bottom: 2px solid black;
+        margin-bottom: 10px;
+        >.society{
+            padding:5px 0px;
+            width: 100%;
+            text-align: left;
+            font-family: "Raleway";
+            font-size: 27px;
+            background-color: white;
+            border: none;
+        }
+        > .show{
+            // padding-top: 5px;
+            // border-top: 2px solid black;
+            display: flex;
+            width: 95%;
+            font-size: large;
+            justify-content: space-between;
+            margin: 10px 0px;
+        }
+        > .hide{
+            display: none;
+        }
+    }
     > .box{
-        display: flex;
+        display: none;
         width: 90%;
         justify-content: space-between;
         padding: 19px 3px;
@@ -1047,20 +1110,51 @@
 }
 .home5{
     display: flex;
-    margin-top: 20px;
+    margin-top: 10px;
     flex-direction: column-reverse;
     width: 100%;
     justify-content: space-between;
     align-items: center;
     > .sidenote{
+        display: none;
         font-size: 30px;
         width: 90%;
         padding: 0px 10px;
         text-align: left;
         border-bottom: 2px solid black;
     }
+    > .sidenote_mobile{
+        font-size: 30px;
+        width: 90%;
+        // color: #1ac6ff;
+        padding: 0px 0px;
+        text-align: left;
+        border-bottom: 2px solid black;
+        margin-bottom: 10px;
+        >.events{
+            padding:5px 0px;
+            width: 100%;
+            text-align: left;
+            font-family: "Raleway";
+            font-size: 27px;
+            background-color: white;
+            border: none;
+        }
+        > .show{
+            // padding-top: 5px;
+            // border-top: 2px solid black;
+            display: flex;
+            width: 95%;
+            font-size: large;
+            justify-content: space-between;
+            margin: 10px 0px;
+        }
+        > .hide{
+            display: none;
+        }
+    }
     > .box{
-        display: flex;
+        display: none;
         width: 90%;
         justify-content: space-between;
         padding: 19px 3px;
@@ -1117,14 +1211,45 @@
     justify-content: space-between;
     align-items: center;
     > .sidenote{
+        display: none;
         font-size: 30px;
         width: 90%;
         padding: 0px 10px;
         text-align: left;
         border-bottom: 2px solid black;
     }
+    > .sidenote_mobile{
+        font-size: 30px;
+        width: 90%;
+        // color: #1ac6ff;
+        padding: 0px 0px;
+        text-align: left;
+        border-bottom: 2px solid black;
+        margin-bottom: 10px;
+        >.about{
+            padding:5px 0px;
+            width: 100%;
+            text-align: left;
+            font-family: "Raleway";
+            font-size: 27px;
+            background-color: white;
+            border: none;
+        }
+        > .show{
+            display: flex;
+            width: 95%;
+            font-size: large;
+            justify-content: space-between;
+            margin: 10px 0px;
+            // padding-top: 5px;
+            // border-top: 2px solid black;
+        }
+        > .hide{
+            display: none;
+        }
+    }
     > .box{
-        display: flex;
+        display: none;
         width: 90%;
         justify-content: space-between;
         padding: 19px 3px;
