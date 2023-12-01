@@ -9,8 +9,6 @@ const Home = () => {
       const [dd4, setdd4] = useState(false);
       const [dd5, setdd5] = useState(false);
       const toggle1 = () => {
-
-      const toggle = () => {
             setdd1(!dd1);
       }
       const toggle2 = () => {
