@@ -5,7 +5,7 @@ import { HashLink } from "react-router-hash-link";
 const Header = () => {
   return (
     <nav>
-        <h1>MyHerupa2</h1>
+        <h1 >MyHerupa2</h1>
         <main>
           <div className="isLoggedIn">
             <div className="icon"></div>
