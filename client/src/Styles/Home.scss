@@ -134,6 +134,10 @@
            
    }
 
+   >.sidenote_mobile{
+    display: none;
+   }
+
    > .sidenote_mobile{
     display: none;
    }
@@ -322,6 +326,10 @@
            
    }
 
+   >.sidenote_mobile{
+    display: none;
+   }
+
    > .box {
 
     display: flex;
@@ -456,6 +464,9 @@
     font-weight: 800;
     color: black;
    }   
+   >.sidenote_mobile{
+    display: none;
+   }
 
    > .box {
 
@@ -613,7 +624,9 @@
     margin-left: -45px;
     text-align: center;
     padding-right: 0px;
-           
+   }
+   >.sidenote_mobile{
+    display: none;
    }
 
    > .box {
@@ -767,6 +780,9 @@
     // padding-right: 0px;
     text-align: center;
    }   
+   >.sidenote_mobile{
+    display: none;
+   }
 
    > .box {
 
