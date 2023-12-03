@@ -1085,6 +1085,10 @@
             font-size: large;
             justify-content: space-between;
             margin: 10px 0px;
+            flex-direction: column;
+            > a, Link{
+                margin: 3px;
+            }
         }
         > .hide{
             display: none;
@@ -1164,6 +1168,11 @@
             font-size: large;
             justify-content: space-between;
             margin: 10px 0px;
+            flex-direction: column;
+            > a, Link{
+                margin: 3px;
+            }
+
         }
         > .hide{
             display: none;
