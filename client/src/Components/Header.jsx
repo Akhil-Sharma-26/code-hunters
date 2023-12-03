@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Header = () => {
+
+  const [cover, setCover] = useState(false);
+  const toggleCover = () =>{ 
+    console.log(cover);
+    setCover(!cover);
+  }
   return (
-    <nav>
+    <>
+    <nav className={cover ?  "cover" : "unCover"}>
         <h1 >MyHerupa2</h1>
         <main>
           <div className="isLoggedIn">
@@ -20,9 +27,21 @@ const Header = () => {
           <Link to = {"/other"}>Others</Link>
           {/* HashLink sirf wo hi pages karne hain jo scroll kar ke access kiye ja sakte hain and jinke liye alag se page bnana hai unke liye sirf link */}
         </main>
-        <div id="img">
+        <button onClick={toggleCover} id="button_mobile_menu">
+        <div id="img" className="icon_menu_mobile">
         </div>
+        </button>
     </nav>
+    <div className={cover ? "options" : "hide"} id="mobile_menu">
+          <Link to={"/"}  onClick={toggleCover}>Home</Link>
+          <Link to={"/firstyear"} onClick={toggleCover}>Notes</Link>
+          <Link to = {"/other"}  onClick={toggleCover}>Others</Link>
+          <Link to={"/banks"}  onClick={toggleCover}>Banks & Loans</Link>
+          <Link to={"/finance"} style={{textAlign: "center"}}  onClick={toggleCover}>Financial <br/>Assistance</Link>
+          <Link to={"/societie"}  onClick={toggleCover}>Societies</Link>
+          <Link to={"/events"}  onClick={toggleCover}>Events</Link>
+    </div>
+    </>
   );
 };
 

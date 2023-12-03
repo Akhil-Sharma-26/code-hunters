@@ -105,8 +105,9 @@ const Home = () => {
         <div className="sidenote_mobile">
             <button onClick={toggle3} className='society'>Society</button>
             <div className={dd3 ? 'show' : 'hide'}>
-            <a href="https://ccstiet.com" target='blank'>CCS<br/>Creative Computing Society</a>
+            <a href="https://ccstiet.com" target='blank'>CCS : Creative Computing Society</a>
             <a href="https://sites.google.com/thapar.edu/taas/home">TAAS</a>
+            <Link to={"/societie"}>View all Societies...</Link>
             </div>
         </div>
         <div className='box'>
@@ -152,6 +153,7 @@ const Home = () => {
             <a href="#">GSoC</a>
             <a href="#">Code Craze</a>
             <a href="#">Microsoft Imagine Cup</a>
+            <Link to={"/events"}>View all Events...</Link>
             </div>
         </div>
       </div>
