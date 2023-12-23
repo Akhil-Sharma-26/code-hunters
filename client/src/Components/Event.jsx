@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./Card";
 
+
 const Event = () => {
   const objectArr = [
     {
@@ -19,6 +20,8 @@ const Event = () => {
       desc: "Google Summer of Code is a global, online program focused on bringing new contributors into open source software development. GSoC Contributors work with an open source organization on a 12+ week programming project under the guidance of mentors.",
     },
   ];
+
+  
 
   return (
     <div className="event">
