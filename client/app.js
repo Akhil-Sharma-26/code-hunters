@@ -1,37 +1,24 @@
 const express = require("express");
+const dotenv = require("dotenv");
 const app = express();
 const mongoose = require("mongoose");
 
 // ! MiddleWare
 
-const DBConnection = "";
-mongoose
-  .connect(DBConnection, {
-    // useNewUrlParser: true,
-    // useCreateIndex: true,
-    // useUnifiedTopology: true,
-    // useFindAndModify: false,
-  })
-  .then(() => {
-    console.log("Connected to DB");
-  })
-  .catch((err) => console.log(`Failed to connect to DB. Error: ${err}`));
+dotenv.config({ path: "./.env" });
 
-const middleWare = (req, res, next) => {
-  console.log("Hello it's MiddleWare");
-  next();
-};
+const DBConnection = process.env.MONG_URL;
+const PORT = process.env.PORT;
 
-app.get("/", (req, res) => {
-  res.send(`Hi, this is Home Page.`);
-});
+require("./db");
 
-app.get("/about", middleWare, (req, res) => {
-  res.send("About world");
-});
+// Linking Router Files
+app.use(express.json());
+// above one to convert the data into the JSON format.
+app.use(require("./router/auth"));
 
-app.listen(8000, () => {
-  console.log("Listening...");
+app.listen(PORT, () => {
+  console.log(`Listening to port:${PORT}...`);
 });
 
 console.log("Server Started.");
