@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import axios from "axios"
 
 
 const Event = () => {
@@ -21,7 +22,21 @@ const Event = () => {
     },
   ];
 
-  
+  const FDB = e => {
+    e.preventDefault();
+
+    console.log()
+
+    axios.get("http://localhost:5000/getData").then(
+      response => {
+        console.log(`Data received from server.`);
+        console.log(response.data);
+      }
+    ).catch( error => {
+      console.log(`Error with axios, ${error}`)
+    })
+
+  }
 
   return (
     <div className="event">
@@ -58,6 +73,7 @@ const Event = () => {
           // picarray.map( (i) => )
         }
       </div>
+      <button onClick={FDB}>Please Click it!</button>
     </div>
   );
 };
