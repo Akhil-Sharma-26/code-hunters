@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "./Card";
-import axios from "axios"
-
+import axios from "axios";
 
 const Event = () => {
   const objectArr = [
@@ -25,12 +24,10 @@ const Event = () => {
   const FDB = e => {
     e.preventDefault();
 
-    console.log()
-
     axios.get("http://localhost:5000/getData").then(
       response => {
         console.log(`Data received from server.`);
-        console.log(response.data);
+        console.log(response.data.events.map(e => console.log(e)));
       }
     ).catch( error => {
       console.log(`Error with axios, ${error}`)
