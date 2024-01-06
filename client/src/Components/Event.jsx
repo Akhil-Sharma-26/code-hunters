@@ -24,10 +24,10 @@ const Event = () => {
   const FDB = e => {
     e.preventDefault();
 
-    axios.get("http://localhost:5000/getData").then(
+    axios.get(process.env.REACT_APP_DOMAIN + '/getData').then(
       response => {
         console.log(`Data received from server.`);
-        console.log(response.data.events.map(e => console.log(e)));
+        console.log(response.data);
       }
     ).catch( error => {
       console.log(`Error with axios, ${error}`)
