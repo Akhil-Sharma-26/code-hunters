@@ -9,7 +9,7 @@ const cors = require("cors");
 dotenv.config({ path: "./.env" });
 
 const DBConnection = process.env.MONG_URL;
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 const corsOptions = {
   origin: "http://localhost:5001",
   optionsSuccessStatus: 200,

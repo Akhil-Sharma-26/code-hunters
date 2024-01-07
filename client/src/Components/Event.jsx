@@ -24,7 +24,7 @@ const Event = () => {
   const FDB = e => {
     e.preventDefault();
 
-    axios.get(process.env.REACT_APP_DOMAIN + '/getData').then(
+    axios.get('/getData').then(
       response => {
         console.log(`Data received from server.`);
         console.log(response.data);
