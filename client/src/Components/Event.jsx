@@ -26,7 +26,7 @@ const Event = () => {
 
     axios.get('/getData').then(
       response => {
-        console.log(`Data received from server.`);
+        console.log(`Data received from servers.`);
         console.log(response.data);
       }
     ).catch( error => {
