@@ -2,7 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv");
 const app = express();
 const mongoose = require("mongoose");
-const cors = require("cors");
+// const cors = require("cors");
 
 // ! MiddleWare
 
@@ -10,14 +10,9 @@ dotenv.config({ path: "./.env" });
 
 const DBConnection = process.env.MONG_URL;
 const PORT = process.env.PORT || 5000;
-const corsOptions = {
-  origin: "http://localhost:5001",
-  optionsSuccessStatus: 200,
-};
-
 require("./db");
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 
 app.use(express.json());
 // above one to convert the data into the JSON format.
