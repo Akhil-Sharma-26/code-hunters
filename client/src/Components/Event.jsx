@@ -1,5 +1,6 @@
 import React from "react";
 import Card from "./Card";
+import axios from "axios";
 
 const Event = () => {
   const objectArr = [
@@ -19,6 +20,20 @@ const Event = () => {
       desc: "Google Summer of Code is a global, online program focused on bringing new contributors into open source software development. GSoC Contributors work with an open source organization on a 12+ week programming project under the guidance of mentors.",
     },
   ];
+
+  const FDB = e => {
+    e.preventDefault();
+
+    axios.get('/getData').then(
+      response => {
+        console.log(`Data received from servers.`);
+        console.log(response.data);
+      }
+    ).catch( error => {
+      console.log(`Error with axios, ${error}`)
+    })
+
+  }
 
   return (
     <div className="event">
@@ -55,6 +70,7 @@ const Event = () => {
           // picarray.map( (i) => )
         }
       </div>
+      <button onClick={FDB}>Please Click it!</button>
     </div>
   );
 };
